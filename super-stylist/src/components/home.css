@@ -12,26 +12,27 @@
 }
 .ok
 {
-    padding-top: 40px;
+    padding-top: 10px;
 }
 .container {
     text-align: center;
         height: 600px;
         width:80%;
         display: grid;
-        
+        padding-top: 105px;
     border: 2px solid black;
     background-image:url(https://thumbs.dreamstime.com/z/fashion-female-set-clothes-isolated-white-collage-women-spring-summer-casual-clothing-64087439.jpg);
     
 
 }
 .tag-line {
-    opacity: 1;;
-    padding-top: 100px;
+    height: 70px;
+    opacity: 1;
     font-size: 48px;
-    font-family: cursive;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: blanchedalmond;
    margin:auto;
-    color:magenta;
+    color:rgb(63, 11, 11);
 }
 .get-started {
     opacity: 1;
@@ -40,5 +41,14 @@
     width:400px;
     background-color:rgb(207, 40, 40);
     color:white;
+}
+.footer-div {
+    padding-top: 10px;;
+}
+.footer {
+    
+    height: 50px;
+    width: 100%;
+    background-color: black;
 }
 

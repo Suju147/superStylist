@@ -19,10 +19,15 @@ const Home=()=>{
         </header>
     <div className="ok">
         <div className="container" style={{margin:"auto"}}>
-             <header className="tag-line"><b>"Clothes That will talk on your behalf."</b></header>
+             <header className="tag-line"><b><i>"Clothes That will talk on your behalf."</i></b></header>
             <button className="get-started"><b>Get Started</b></button>
 
         </div>
+    </div>
+    <div class="footer-div">
+    <footer class="footer">
+
+    </footer>
     </div>
         </>
 
