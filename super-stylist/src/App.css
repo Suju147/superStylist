@@ -1,3 +1,81 @@
 body {
-  background-color: grey;}
+  background-image: url(https://images.unsplash.com/photo-1512233863483-299ac6565a96?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1904&q=80);
+}
+  
+
+
+.HomePage {
+  font-size: large;
+  color: aquamarine;
+  
+}
+
+.navbar-bran {
+  display: inline-block;
+    padding-left: 25px;
+    color:orange;
+    font-family:cursive;
+   font-size:100px;
+}
+.stylist {
+  color: rgb(238, 32, 145);
+}
+.Login {
+  font-family: cursive;
+  float:right;
+  padding-top: 18px;
+  padding-right: 45px;;
+  font-size: xx-large;
+  color:black;
+  
+}
+.faq,.profile,.wishlist {
+  font-family: cursive;
+  float:right;
+  padding-top: 18px;
+  padding-right: 25px;;
+  font-size: xx-large;
+  color:black;
+}
+
+.container {
+  height: 400px;
+  width:800px;
+  float:left;
+  text-align: center;
+  position: relative;
+  top:180px;
+}
+.tag 
+{
+  color:brown;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 44px;
+}
+.welcome {
+  font-size: 40px;
+}
+.start {
+  background-color:crimson;
+  font-size: 38px;
+  margin:auto;
+  width: 60%;
+  color:whitesmoke;
+}
+  
+.photo 
+{
+  float:right;
+  padding-right: 50px;
+}
+
+.side 
+{
+  height:590px;
+
+}
+ 
+
+
+
 
