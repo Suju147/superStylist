@@ -1,0 +1,30 @@
+.description {
+    height: auto;
+    width:80%;
+    margin:5% auto auto auto;
+    
+    padding:5% 5% 5%;
+    font-size: large;
+    font-weight: 500;
+}
+
+.back {
+    margin-top:5% ;
+    font-size: x-large;
+    width:20%;
+    background-color: crimson;
+    color: white;
+    font-weight: bold;
+    position:absolute;
+    left:40%;
+    border-radius:10px ;
+}
+.explore ,.head{
+    position: absolute;
+    left:32%;
+    font-size: x-large;
+}
+
+.head {
+    left: 15%;
+}

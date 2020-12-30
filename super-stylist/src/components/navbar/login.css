@@ -1,0 +1,41 @@
+.login {
+    height:550px;
+    width:500px;
+    margin:8% 35%;
+    border:1px solid black;
+    text-align: center;
+    padding: 2% 2%;
+    background-color: white;
+    
+}
+
+.Welcome {
+    font-size: xx-large;
+}
+.Offer {
+    padding: 20px;
+    font-size: large;
+}
+
+.Mail {
+    border:1pxsolid black;
+    width:80%;
+    text-align: center;
+    font-size: medium;
+    color: lightgoldenrodyellow;
+    font-weight: bold;
+    background-color: crimson;
+   
+}
+.Google {
+    border:1px solid black;
+    width:80%;
+    text-align: center;
+    font-size: medium;
+    margin:auto;
+    
+}
+
+.close {
+    float:left;
+color: black;}
