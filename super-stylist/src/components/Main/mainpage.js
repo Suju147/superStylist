@@ -36,6 +36,7 @@ class MainPage extends React.Component {
           onMouseLeave={this.props.handleMouseHoverWomen}>Women</Link>
         <Link className="LookBook" to="/LookBook">LookBook</Link>
         <Link className="FashionTips" to="/FashionTips">FashionTips</Link>
+        <Link className="Home" to="/">Home</Link>
     
     
     </div>

@@ -1,0 +1,43 @@
+.contact {
+    height:50%;
+    width:50%;
+    text-align: right;
+    background-color: white;
+    border:2px solid black;
+    margin:5% 30%;
+    padding:5%;
+}
+.information {
+    position: absolute;
+    left:20%;
+    top:20%;
+    height: 40%;
+    width: 25%;
+    border:2px solid black;
+    font-size: large;
+    text-align: left;
+    padding-left: 2%;
+    background-color: crimson;
+    color: white;
+}
+.send {
+    background-color: crimson;
+    color:white;
+    border-radius: 20%;
+    font-size: large;
+}
+.field {
+    width:50%;
+    height:30px
+}
+.textfield {
+    width:50%;
+}
+.closebtn {
+    float:right;
+    margin:0%;
+    position: absolute;
+    top:13%;
+    right:23%;
+}
+
