@@ -6,7 +6,7 @@ class LookBook extends React.Component{
     render(){
     return<div>
         <MainPage/>
-        <span className="looktag">--- LOOk BOOk ---</span>
+        <div className="looktag"><b>Celebrity Look Book</b></div>
         <div className="look">
             
         <div className="lookbook">

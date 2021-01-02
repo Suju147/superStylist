@@ -9,6 +9,8 @@ import SlideShow from './home files/slideshow';
 import MenCard from './options/menCard';
 import WomenCard from './options/womenCard';
 import LookBook from './Main/lookbook';
+import MenCollection from './Men/men';
+import WomenCollection from './women/women';
 class Home extends React.Component{
     constructor(props) {
         super(props);
@@ -52,8 +54,8 @@ class Home extends React.Component{
         <Route exact path="/About"><About/></Route>
         <Route exact path="/Contact"><Contact/></Route>
         <Route exact path="/FashionTips"><FashionTips/></Route>
-        <Route exact path="/Men"><MenCard/></Route>
-        <Route exact path="/Women"><Login/></Route>
+        <Route exact path="/Men"><MenCollection/></Route>
+        <Route exact path="/Women"><WomenCollection/></Route>
         <Route exact path="/LookBook"><LookBook/></Route>
         
     </Switch>
