@@ -7,7 +7,15 @@ import Login from './components/navbar/login';
 import Contact from './components/navbar/contact';
 import About from './components/navbar/about';
 import PublicHomePage from './components/Main/HomePage';
-
+import FashionTips from './components/options/tips';
+import MenCollection from './components/Men/men';
+import WomenCollection from './components/women/women';
+import LookBook from './components/Main/lookbook';
+import WomenSummer from './components/women/WomenSummer';
+import WomenWinter from './components/women/WomenWinter';
+import MenWinter from './components/Men/menWinter';
+import SummerMen from './components/Men/menSummer';
+import SingleProd from './components/women/SingleProd';
 
 
 class App extends React.Component {
@@ -37,6 +45,35 @@ moveto=()=>{
               <Route exact path="/Contact"><Contact/></Route>
               
               <Route exact path="/"><PublicHomePage/></Route>
+
+            <Route exact path="/FashionTips">
+              <FashionTips />
+            </Route>
+            <Route exact path="/Men">
+              <MenCollection />
+            </Route>
+            <Route exact path="/Women">
+              <WomenCollection />
+            </Route>
+            <Route exact path="/LookBook">
+              <LookBook />
+            </Route>
+            <Route exact path="/women_summer">
+              <WomenSummer />
+            </Route>
+            <Route exact path="/women_winter">
+              <WomenWinter />
+            </Route>
+            <Route exact path="/men_winter">
+              <MenWinter />
+            </Route>
+            <Route exact path="/men_summer">
+              <SummerMen />
+            </Route>
+            <Route exact path="/product/:id">
+              <SingleProd />
+            </Route>
+              
               </Switch>
               </BrowserRouter>
         

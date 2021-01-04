@@ -1,0 +1,46 @@
+.summers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+
+.summers div {
+  background-color: rgb(254, 171, 185);
+  margin: 5px 10px;
+  height: 300px;
+  width: 250px;
+  position: relative;
+  /* object-fit: scale-down; */
+  overflow: hidden;
+}
+
+.summers div img {
+  width: 100%;
+  /* height: 100%; */
+  z-index: 1;
+}
+
+.summers div h4 {
+  position: absolute;
+  text-align: start;
+  text-decoration: none;
+  color: white;
+  border-right: 1px solid pink;
+  width: 50%;
+  background-color: rgb(214, 31, 214);
+  padding: 10px;
+  z-index: 10;
+  bottom: 0;
+}
+
+.summers div div {
+  position: absolute;
+  text-align: end;
+  width: 50%;
+  height: 39px;
+  padding: 10px;
+  color: rebeccapurple;
+  bottom: 5px;
+  right: 0;
+}

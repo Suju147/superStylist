@@ -1,69 +1,66 @@
-
-.navbar-bran,.stylist {
+.navbar-bran,
+.stylist {
   display: inline-block;
-    padding-left: 25px;
-    color:crimson;
-    font-family:cursive;
-   font-size:80px;
-   
+  color: crimson;
+  font-size: 80px;
 }
 
 .Login {
-  font-family: cursive;
-  float:right;
-  padding-top: 18px;
-  padding-right: 45px;;
-  font-size: xx-large;
-  color:black;
-  
+  color: black;
 }
-.profile,.wishlist,.About,.Contact {
-  font-family: cursive;
-  float:right;
-  padding-top: 18px;
-  padding-right: 30px;;
-  font-size: xx-large;
-  color:black;
+
+.Login,
+.wishlist,
+.About,
+.Contact {
+  color: black;
+  padding: 0 10px;
 }
 
 .containers {
-  height: 400px;
-  width:100%;
-  margin:auto;
-  text-align: center;
-  position: relative;
-  top:160px; 
-}
-.heading{
-  display: none;
-  font-size: xx-large;
-}
-.tag 
-{
-  color:brown;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 44px;
-}
-.welcome {
-  font-size: 70px;
+  background-color: rgba(0, 0, 0, 0.5);
+border-radius: 80%;
+  display: flex;
+  height: 100vh;
+  padding-left: 2%;
+  padding-right: 2%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   
 }
+.heading {
+  color: pink;
+  font-size: 20px;
+}
+.tag {
+  color: pink;
+  font-size: 30px;
+}
+.welcome {
+  color: pink;
+  font-size: 50px;
+}
 .start {
-  background-color:crimson;
-  font-size: 38px;
-  margin:auto;
-  width: 30%;
-  color:whitesmoke;
+  background-color: rgb(201, 0, 40);
+  font-size: 20px;
+  margin-top: 2%;
+  padding: 5px 10px;
+  width: 35%;
+  color: pink;
   border-radius: 10px;
   opacity: 1;
 }
 
+.fas {
+  transform: scale(1.5);
+  margin-right: 10px;
+  padding: 0 5px;
+  cursor: pointer;
+}
 
-
-
-  
-
-
-
-
-
+.bbgg {
+  background-image: url(https://images.unsplash.com/photo-1551754479-aeca1281acf4?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

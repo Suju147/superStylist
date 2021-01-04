@@ -1,48 +1,44 @@
 .card {
-    border:2px solid rgb(243, 218, 218);
-    background-color:rgb(247, 214, 214);
-    width:350px;
-    margin:2%;
-    padding-top: 2%;
-    padding-bottom: 1%;
-    color:crimson;
-    text-align: center;
-    border-radius: 5%;
+  border: 2px solid rgb(243, 218, 218);
+  background-color: rgb(249, 228, 228);
+  width: 25vw;
+  margin-bottom: 40px;
+  color: crimson;
+  text-align: center;
+  border-radius: 5px;
+  padding: 0 10px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 .image {
-    height:300px;
-    width:60%;
+  height: 300px;
+  width: 60%;
 }
 .tips {
-    width:60%;
-    background-color: crimson;
-    color: white;
-    font-size: large;
-    font-family: cursive;
+  width: 60%;
+  background-color: crimson;
+  color: white;
+  font-size: large;
 }
 
 .collection {
-    text-align: center;
+  text-align: center;
 }
 .fashionHeading {
-    background-color: brown;
-    width:80%;
-    margin-left: 10%;
-    border-radius: 60%;
-    color: gold;
-    font-size: 70px;
-    font-family: cursive;
+  color: rgb(101, 99, 99);
+  font-size: 50px;
 }
 
 .fashion {
-    background-color: rgb(252, 216, 222);
-    width:80%;
-    margin-left: 10%;
-    font-size: large;
-    font-style: cursive;
-    font-weight: bold;
+  margin-bottom: 30px;
+  width: 80%;
+  margin-left: 10%;
+  font-size: large;
+  font-weight: bold;
 }
 
 .cardCollection {
-    display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
 }
