@@ -44,3 +44,31 @@
   bottom: 5px;
   right: 0;
 }
+
+.sidebar {
+  display: fixed;
+  height: 100vh;
+  width:40%;
+  background-color: pink;
+  border:1px solid black;
+  margin:22px 2px 0 2px ;
+  padding: 2%;
+}
+
+input[type="radio"] {
+  -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+    transform: scale(1.5);
+    margin-right: 10px;
+}
+label {
+  font-size: large;
+}
+
+.clear , .Apply {
+ 
+  background-color: coral;
+  font-weight: bold;
+  margin-right: 22px;
+  float:right;
+}

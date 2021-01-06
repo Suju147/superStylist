@@ -2,10 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./mainpage.css";
 
+
+
 class MainPage extends React.Component {
   render() {
     return (
-      <>
+      <div>
         <header className="deskstop-container">
           <nav className="navb">
             <div
@@ -73,7 +75,7 @@ class MainPage extends React.Component {
             </Link>
           </div>
         </div>
-      </>
+      </div>
     );
   }
 }
