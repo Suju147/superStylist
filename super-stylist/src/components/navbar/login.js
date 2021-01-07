@@ -12,24 +12,31 @@ function Login(props){
     <div >
     {
         redirect?<Redirect to="/"/>:
-    
         <div className="login">
-        <span className="close" onClick={clickHandler}>X</span>
-        <br></br>
-            <div className="Welcome"><b>Welcome To Super Stylist!</b></div>
-            <div className="Offer"><b>Login/SignUp</b> To quickly find your favourites styles, saved your collections.</div>
-            <div className="photo"><img src="http://clipart-library.com/data_images/308739.jpg" height="150px" width="90%"></img></div>
-            <br>
-            </br>
-            <br>
-            </br>
-            <input className="Mail" placeholder="Enter PhoneNumber or Email."></input>
-            <br>
-            </br>
-            <br></br>
-            <div className="Google" onClick=""><img src="https://www.devdiscourse.com/AdminFiles/NewsImages/01_06_2018_03_02_32_7499486.png?width=920&format=webp" height="30px" width="30px"></img> Google</div>
-        </div>}
-        </div></>
+              <span className="close" onClick={clickHandler} ><i className='fas fa-times'></i></span>
+                <div className="left">
+                    <h1>Welcome To Super Stylist!</h1>
+                    <h4><b>Login/SignUp</b> To quickly find your favourites styles, saved your collections.</h4>
+                    <img src="http://clipart-library.com/data_images/308739.jpg"/>
+                </div>
+                <div className="right" style={{backgroundColor:'crimson'}} >
+                    <h4 style={{color:'white'}}><b>Login/SignUp</b> To quickly find your favourites styles, saved your collections.</h4>
+                    <div className="frm_input">
+                        <div>
+                        <label for="username" style={{color:'white'}}>Username :</label>
+                        <input type="text" name="username" value="" style={{margin:'5px 4px'}} ></input>
+                        </div>
+                        <div>
+                        <label for="password"style={{color:'white'}}>Password :</label>
+                        <input type="password" name="password" value="" style={{margin:'5px 4px'}}></input>
+                    </div></div>
+                    <button className="login_btn btn" style={{margin:'10px 5px' ,backgroundColor:'black',color:'white',padding:"4px 7px"}}>Login</button>
+                        <button className="register btn" style={{margin:'10px 5px',backgroundColor:'black',color:'white', padding:'4px 7px'}}>Register</button>
+                </div>
+            </div>
+}
+</div></>
+
 }
 
 export default Login;

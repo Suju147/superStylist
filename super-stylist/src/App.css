@@ -2,6 +2,11 @@ body {
     background-color: rgb(255, 222, 227);
   }
   
+  .fixed_nav{
+    background-color: rgb(255, 222, 227);
+    padding-bottom: 15px;
+  }
+
   button:hover {
     transform: scale(0.98);
   }

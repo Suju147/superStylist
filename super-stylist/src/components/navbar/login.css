@@ -1,41 +1,89 @@
 .login {
-    height:550px;
-    width:500px;
-    margin:8% 35%;
-    border:1px solid black;
+    /* Nice... */
+    position: relative;
+    height:100%;
+    width:80%;
+    margin:8% auto;
+    /* border:1px solid black; */
+    border-radius: 15px;
     text-align: center;
-    padding: 2% 2%;
+    /* padding: 20px; */
+    justify-content: center;
+    /* align-items: center; */
     background-color: white;
-    
-}
-
-.Welcome {
-    font-size: xx-large;
-}
-.Offer {
-    padding: 20px;
-    font-size: large;
-}
-
-.Mail {
-    border:1pxsolid black;
-    width:80%;
-    text-align: center;
-    font-size: medium;
-    color: lightgoldenrodyellow;
-    font-weight: bold;
-    background-color: crimson;
-   
-}
-.Google {
-    border:1px solid black;
-    width:80%;
-    text-align: center;
-    font-size: medium;
-    margin:auto;
-    
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .close {
-    float:left;
-color: black;}
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    font-size: medium;
+}
+
+.close .fas {
+    color: black;
+    opacity: 1;
+    margin: 5px;
+
+}
+/* aab kro */
+/* thik lgra...hn badhiya...cool...aab kya krna bss auth bcha h...kro fir jldi sehn thik h krti hu...kro kroaccha suno..clear all pr ye uncheck kese honge..hnji...thoda items ko spread krdena isme...items? */
+
+.left img {
+    width: 80%;
+    height: 60%;
+}
+
+.left {
+    padding: 25px 10px;
+    min-width: 400px;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+.right {
+    /* border: 3px solid black; */
+    border-radius: 15px;
+    /* height: 100%; */
+    padding: 5%;
+    min-width: 400px;
+    justify-content: center;
+    /* align-items: center; */
+    width: 50%;
+    /* display: flex; */
+    /* flex-direction: column;  */
+}
+/* ye %padding mje smj ni aari ise apne aap set kr lena...okk......ab kya krna..authentication kruga....routes banai...na ui change ki h na to usi hisab se hoga...hupp....hahaha hupp kyaa hota h hahaha........jao authentication lagao isme..tm?..batao kya krna...kch ni wait */
+.frm_input {
+    /* background-color: blanchedalmond; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.frm_input div{
+    margin: 7px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width:1010px){
+    .left{
+        display: none;
+        /* width: 100%; */
+    }
+    .right{
+        width: 100%;
+    }
+    .login{
+        width: 70%;
+        flex-wrap: wrap;
+    }
+}
+
+/* ase???????okkkk???login wala part upar rakho..fir welcome misplaced lg.e.g..a...........welcome to vase b home screen p krr he rhi ho...hn htau?hn ......media query m */

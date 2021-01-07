@@ -1,8 +1,21 @@
 import React from "react";
 import MainPage from "./mainpage";
+import { Link, Redirect ,Route} from 'react-router-dom';
 import "./lookbook.css";
+import HinaKhan from '../lookbook/hinakhan'
 
 class LookBook extends React.Component {
+  constructor(){
+    super();
+    this.state={
+      hina:false,
+      anushka:false,
+      priyanka:false,
+      samantha:false,
+      sonam:false,
+      deepika:false,
+    }
+  }
   render() {
     return (
       <div>
@@ -19,7 +32,8 @@ class LookBook extends React.Component {
           </div>
           <div className="look">
             <div className="lookbook">
-              <div className="celebrity">
+              <Link to='/lookBook/Hina_khan'>
+                <div className="celebrity" onClick={<Route exact path="lookBook/Hina_khan"><HinaKhan/></Route>}>
                 <img
                   className="HinaKhan"
                   src="https://instagram.fdel29-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/124815664_424202618568286_430038991439331392_n.jpg?_nc_ht=instagram.fdel29-1.fna.fbcdn.net&_nc_cat=110&_nc_ohc=tsA_gNvMGk0AX8SUTTY&tp=1&oh=57cb0cb98c7ec0cf0989a6562a3a9ad2&oe=601AB4B9"
@@ -29,9 +43,10 @@ class LookBook extends React.Component {
                   Hina Khan's glamourous Look which will inspire you to look
                   confident.
                 </div>
-              </div>
+              </div></Link>
 
-              <div className="celebrity">
+              <Link to='/lookBook/Deepika'>
+                <div className="celebrity" onClick={()=>{this.setState({deepika:true,})}}>
                 <img
                   alt="img"
                   className="DeepikaPadukone"
@@ -42,8 +57,10 @@ class LookBook extends React.Component {
                   looks from 2020.
                 </div>
               </div>
+              </Link>
 
-              <div className="celebrity">
+              <Link to='/lookBook/Sonam'>
+                <div className="celebrity" onClick={()=>{this.setState({sonam:true,})}}>
                 <img
                   alt="img"
                   className="sonamkapoor"
@@ -54,7 +71,10 @@ class LookBook extends React.Component {
                   style their lehengas, kurtas and saris for the winter.
                 </div>
               </div>
-              <div className="celebrity">
+              </Link>
+
+              <Link to='/lookBook/Samantha'>
+                <div className="celebrity" onClick={()=>{this.setState({samantha:true,})}}>
                 <img
                   alt="img"
                   className="HinaKhan"
@@ -65,18 +85,23 @@ class LookBook extends React.Component {
                   Myntra now.
                 </div>
               </div>
-              <div className="celebrity">
+              </Link>
+
+              <Link to='/lookBook/Anushka'>
+                <div className="celebrity" onClick={()=>this.setState({anushka:true,})}>
                 <img
                   alt="img"
                   className="Anushka"
                   src="https://instagram.fdel29-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/72791039_2516102138479586_996049696303198156_n.jpg?_nc_ht=instagram.fdel29-1.fna.fbcdn.net&_nc_cat=102&_nc_ohc=ZupLs8H9Sc8AX_ytwYe&tp=1&oh=0afbdfb526c54a62401f6991747a1296&oe=601A664A"
                 />
-                <div className="statement">
+                <div className="statement" >
                   Style that you've must try once from Anushka Sharma's
                   LookBook.
                 </div>
               </div>
-              <div className="celebrity">
+              </Link>
+              <Link to='/lookBook/Priyanka'>
+                <div className="celebrity" onClick={()=>this.setState({priyanka:true,})}>
                 <img
                   alt="img"
                   className="Priyanka"
@@ -87,6 +112,7 @@ class LookBook extends React.Component {
                   Sonam winter lookbook.
                 </div>
               </div>
+              </Link>
             </div>
           </div>
         </div>

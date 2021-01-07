@@ -16,6 +16,8 @@ import WomenWinter from './components/women/WomenWinter';
 import MenWinter from './components/Men/menWinter';
 import SummerMen from './components/Men/menSummer';
 import SingleProd from './components/women/SingleProd';
+import HinaKhan from './components/lookbook/hinakhan';
+import Deepika from './components/lookbook/deepika';
 
 
 class App extends React.Component {
@@ -73,6 +75,9 @@ moveto=()=>{
             <Route exact path="/product/:id">
               <SingleProd />
             </Route>
+
+            <Route exact path='/lookBook/Hina_Khan'><HinaKhan/></Route>
+            <Route exact path='/lookBook/Deepika'><Deepika/></Route>
               
               </Switch>
               </BrowserRouter>

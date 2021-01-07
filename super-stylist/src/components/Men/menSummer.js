@@ -12,11 +12,9 @@ const SummerMen = () => {
   const [loading,setLoading] = useState(true)
 
   const settonehandler = (e) => {
-    // e.preventdefault()
+   
     setTone(e.target.value);
-    // var nw = prod.filter(p => p.skin_tone === tone)
-    // setData(nw)
-    // console.log(tone)
+    
   }
 
   const setbodyhandler = (e) => {
@@ -39,11 +37,11 @@ const SummerMen = () => {
   
   }, [prod]); 
   return (
-    <div >
+    <div style={{position:'relative'}} >
       
       <MainPage />      
-      <div className="filter_bar" style={{display:'flex'}}>
-        <div className="sidebar" style={{width:"23vw"}}>
+      <div className="filter_bar" >
+        <div className="sidebar" >
           <div>
             <h2 style={{color:"crimson"}}>Filters</h2>
           <h3>Skin Tone</h3>
@@ -53,12 +51,11 @@ const SummerMen = () => {
              Fair-Medium
           </label>
           <br/>
-         
+         {/* dekhna padega yaad ni mje..koi na checked attribute hota h?.........dkh lenge bd m abi auth banao....okkkjiiiiii..so jaao...aur tm kya karogi..auth..add to kiye ni.dekha lia kse banana h..hn try krti hu ...kro subha bata dena thik...hn thik h */}
           <input type="radio" id="dark" name="skin_tone" value="brown" onChange={e=>{settonehandler(e)}}></input>
           <label for="dark">
              Medium-dark
           </label></div>
-          <hr style={{borderColor:"black"}}></hr>
           <div>
           <h3>Body Type</h3>
         
@@ -73,14 +70,14 @@ const SummerMen = () => {
              Fit-Heavy
           </label>
           </div>
-          <hr style={{borderColor:"black"}}></hr>
-          <button className="clear" onClick={()=>{setData([]);}}>Clear All</button>
-          <button className="Apply" onClick={()=>filter()}>Apply</button>
+          <button className="btn" onClick={()=>{setData([]);}}>Clear All</button>
+          <button className="btn" onClick={()=>filter()}>Apply</button>
 
         </div>
-      <div className="summers" style={{width:"77vw"}}>
+      </div>
+      <div className="summers" style={{paddingTop:"100px"}}>
         {prod.map((el,idx) => (
-          <div style={{height:"450px",width:"400px",marginBottom:"20px"}} key={idx}>
+          <div key={idx}>
             <Link to="#">
               <div className="heart">
                 <i className="fas fa-heart" style={{color:"white"}}></i>
@@ -96,7 +93,7 @@ const SummerMen = () => {
           </div>
         ))}
       </div>
-      </div>
+    
     </div>
   );
 };

@@ -7,7 +7,7 @@ class FashionTips extends React.Component {
       <>
         <MainPage />
 
-        <div className="collection">
+        <div className="collection" style={{paddingTop:'100px'}}>
           <h1 className="fashionHeading">Fashion Tips</h1>
           <br></br>
           <p className="fashion">

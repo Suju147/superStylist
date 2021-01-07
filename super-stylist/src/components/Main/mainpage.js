@@ -7,7 +7,9 @@ import "./mainpage.css";
 class MainPage extends React.Component {
   render() {
     return (
-      <div>
+      <div className='fixed_nav'
+      style={{position:'fixed',zIndex:'10',width:'100%'}}
+      >
         <header className="deskstop-container">
           <nav className="navb">
             <div

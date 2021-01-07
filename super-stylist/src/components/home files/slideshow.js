@@ -3,7 +3,7 @@ import "./slideshow.css";
 class SlideShow extends React.Component {
   render() {
     return (
-      <>
+      <div style={{paddingTop:'100px'}}>
         <div className="contain">
           <div id="myCarousel" className="carousel slide" data-ride="carousel">
             <ol className="carousel-indicators">
@@ -71,7 +71,7 @@ class SlideShow extends React.Component {
             </a>
           </div>
         </div>
-      </>
+      </div>
     );
   }
 }

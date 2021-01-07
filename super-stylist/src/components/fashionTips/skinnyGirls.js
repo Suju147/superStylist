@@ -6,3 +6,5 @@ class SkinnyGirl extends React.Component{
         return<></>
     }
 }
+
+// tips ??

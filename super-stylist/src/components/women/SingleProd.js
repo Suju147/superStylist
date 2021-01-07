@@ -22,7 +22,7 @@ const SingleProd = () => {
   return (
     <>
       <MainPage />
-      {loading ? (<div>Loading</div>) : <div className="singleitem">
+      {loading ? (<div>Loading</div>) : <div className="singleitem" style={{paddingTop:'120px'}} >
         <img src={prodData.src} alt="none"></img>
         <div className="item_description">
           <div className="title_rating">

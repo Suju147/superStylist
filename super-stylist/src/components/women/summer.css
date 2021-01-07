@@ -1,13 +1,26 @@
 .summers {
+  position: absolute;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  padding-top: 20px;
+  width: 80%;
+  right: 0;
+  /* justify-content: space-around; */
+  padding-top: 100px;
+}
+
+.filter_bar{
+  position: fixed;
+  padding-top: 100px;
+  display: flex;
+  height: 100%;
+  width: 20%;
+  justify-content: center;
+  padding-left: 10px;
 }
 
 .summers div {
   background-color: rgb(254, 171, 185);
-  margin: 5px 10px;
+  margin: 5px auto;
   height: 300px;
   width: 250px;
   position: relative;
@@ -30,7 +43,7 @@
   width: 50%;
   background-color: rgb(214, 31, 214);
   padding: 10px;
-  z-index: 10;
+  z-index: 9;
   bottom: 0;
 }
 
@@ -45,7 +58,7 @@
   right: 0;
 }
 
-.sidebar {
+/* .sidebar {
   display: fixed;
   height: 100vh;
   width:40%;
@@ -56,8 +69,8 @@
 }
 
 input[type="radio"] {
-  -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+  -ms-transform: scale(1.5);  IE 9 
+    -webkit-transform: scale(1.5);  Chrome, Safari, Opera 
     transform: scale(1.5);
     margin-right: 10px;
 }
@@ -71,4 +84,4 @@ label {
   font-weight: bold;
   margin-right: 22px;
   float:right;
-}
+} */
