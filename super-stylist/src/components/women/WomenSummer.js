@@ -28,42 +28,41 @@ const SummerWomen = () => {
   return (
     <div>
       <MainPage />
-      <div style={{display:"flex"}}>
-        <div className="sidebar">
+      <div className="filter_bar" >
+        {/* <div className="sidebar" >
           <div>
             <h2 style={{color:"crimson"}}>Filters</h2>
           <h3>Skin Tone</h3>
-          {/* tmne data to server se liya ni is component m??hnabhibwomen ka data bacha h... arey to filter check kse karange chl rha h ya nhi???m :|men m krenge....chlo fir men m... */}
-          <input type="radio" id="fair" name="skin_tone" value="fair" ></input>
+
+          <input type="radio" id="fair" name="skin_tone" value="fair" onChange={e=>{settonehandler(e)}}></input>
           <label for="fair">
              Fair-Medium
           </label>
           <br/>
-          
-          <input type="radio" id="dark" name="skin_tone" value="dark"></input>
+         
+          <input type="radio" id="dark" name="skin_tone" value="brown" onChange={e=>{settonehandler(e)}}></input>
           <label for="dark">
              Medium-dark
           </label></div>
-          <hr style={{borderColor:"black"}}></hr>
           <div>
           <h3>Body Type</h3>
         
-          <input type="radio" id="slim" name="body_type" value="slim"></input>
+          <input type="radio" id="slim" name="body_type" value="slim" onChange={e=>{setbodyhandler(e)}}></input>
           <label for="slim">
              Slim-Fit
           </label>
           <br/>
           
-          <input type="radio" id="fat" name="body_type" value="heavy"></input>
+          <input type="radio" id="fat" name="body_type" value="fat" onChange={e=>{setbodyhandler(e)}}></input>
           <label for="fat">
              Fit-Heavy
           </label>
           </div>
-          <hr style={{borderColor:"black"}}></hr>
-          <button className="clear">Clear All</button>
-          <button className="Apply">Apply</button>
+          <button className="btn" onClick={()=>{setData([]);}}>Clear All</button>
+          <button className="btn" onClick={()=>filter()}>Apply</button>
 
-        </div>
+        </div> */}
+      </div>
       <div className="summers">
         {data.map((el, idx) => (
           <div key={idx}>
@@ -83,7 +82,7 @@ const SummerWomen = () => {
             </Link>
           </div>
         ))}
-      </div></div>
+      </div>
     </div>
   );
 };
