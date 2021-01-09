@@ -1,89 +1,99 @@
 .login {
-    /* Nice... */
-    position: relative;
-    height:100%;
-    width:80%;
-    margin:8% auto;
-    /* border:1px solid black; */
-    border-radius: 15px;
-    text-align: center;
-    /* padding: 20px; */
-    justify-content: center;
-    /* align-items: center; */
-    background-color: white;
-    display: flex;
-    flex-wrap: wrap;
+  position: relative;
+  height: 100%;
+  width: 80%;
+  margin: 8% auto;
+  border-radius: 15px;
+  text-align: center;
+  justify-content: center;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .close {
-    position: absolute;
-    top: 8px;
-    left: 10px;
-    font-size: medium;
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  font-size: medium;
 }
 
 .close .fas {
-    color: black;
-    opacity: 1;
-    margin: 5px;
-
+  color: black;
+  opacity: 1;
+  margin: 5px;
 }
-/* aab kro */
-/* thik lgra...hn badhiya...cool...aab kya krna bss auth bcha h...kro fir jldi sehn thik h krti hu...kro kroaccha suno..clear all pr ye uncheck kese honge..hnji...thoda items ko spread krdena isme...items? */
 
 .left img {
-    width: 80%;
-    height: 60%;
+  width: 80%;
+  height: 60%;
 }
 
 .left {
-    padding: 25px 10px;
-    min-width: 400px;
-    width: 50%;
-    height: 100%;
-    text-align: center;
+  padding: 25px 10px;
+  min-width: 400px;
+  width: 50%;
+  height: 100%;
+  text-align: center;
 }
 
 .right {
-    /* border: 3px solid black; */
-    border-radius: 15px;
-    /* height: 100%; */
-    padding: 5%;
-    min-width: 400px;
-    justify-content: center;
-    /* align-items: center; */
-    width: 50%;
-    /* display: flex; */
-    /* flex-direction: column;  */
+  border-radius: 15px;
+  padding: 40px 60px;
+  min-width: 400px;
+  justify-content: center;
+  justify-content: space-around;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
 }
-/* ye %padding mje smj ni aari ise apne aap set kr lena...okk......ab kya krna..authentication kruga....routes banai...na ui change ki h na to usi hisab se hoga...hupp....hahaha hupp kyaa hota h hahaha........jao authentication lagao isme..tm?..batao kya krna...kch ni wait */
+
+.btn_login_register:active {
+  outline: none;
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+input {
+  border: none;
+  border-radius: 5px;
+  height: 25px;
+  width: 55%;
+  padding: 10px 5px;
+}
+
+.btn_login_register:focus {
+  border: none;
+  outline: none;
+}
+
 .frm_input {
-    /* background-color: blanchedalmond; */
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.frm_input div {
+  margin: 7px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 1010px) {
+  .left {
+    display: none;
+  }
+  .right {
     width: 100%;
+    height: 100%;
+  }
+  .login {
+    width: 50%;
+    flex-wrap: wrap;
+  }
 }
-
-.frm_input div{
-    margin: 7px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-@media(max-width:1010px){
-    .left{
-        display: none;
-        /* width: 100%; */
-    }
-    .right{
-        width: 100%;
-    }
-    .login{
-        width: 70%;
-        flex-wrap: wrap;
-    }
-}
-
-/* ase???????okkkk???login wala part upar rakho..fir welcome misplaced lg.e.g..a...........welcome to vase b home screen p krr he rhi ho...hn htau?hn ......media query m */

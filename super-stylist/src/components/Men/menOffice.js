@@ -1,28 +1,32 @@
-import React, { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import MainPage from "../Main/mainpage";
-import { getMensWinter } from "../../actions/getProducts";
+import { useDispatch, useSelector } from "react-redux";
+import "../women/summer.css";
+import { getMensOffice } from "../../actions/getProducts";
 
-const MenWinter = () => {
-  const settonehandler = (e) => {};
-
-  const setbodyhandler = (e) => {};
-
-  const MensWinter = useSelector((state) => state.MensWinter);
-
-  const { loading, products } = MensWinter;
-
-  const filter = () => {
-    // products.filter(prod=> prod.)
-  };
+const OfficeMen = () => {
+  const [tone, setTone] = useState("");
+  const [body, setBody] = useState("");
 
   const dispatch = useDispatch();
 
-  useEffect(async () => {
-    dispatch(getMensWinter());
-  }, [dispatch]);
+  const settonehandler = (e) => {
+    setTone(e.target.value);
+  };
 
+  const setbodyhandler = (e) => {
+    setBody(e.target.value);
+  };
+
+  const MensOffice = useSelector((state) => state.MensOffice);
+  const { loading, products } = MensOffice;
+
+  const filter = () => {};
+
+  useEffect(async () => {
+    dispatch(getMensOffice());
+  }, [dispatch]);
   return (
     <div style={{ position: "relative" }}>
       <MainPage />
@@ -31,6 +35,7 @@ const MenWinter = () => {
           <div>
             <h2 style={{ color: "crimson" }}>Filters</h2>
             <h3>Skin Tone</h3>
+
             <input
               type="radio"
               id="fair"
@@ -55,6 +60,7 @@ const MenWinter = () => {
           </div>
           <div>
             <h3>Body Type</h3>
+
             <input
               type="radio"
               id="slim"
@@ -78,7 +84,12 @@ const MenWinter = () => {
             ></input>
             <label for="fat">Fit-Heavy</label>
           </div>
-          <button className="btn" onClick={() => {}}>
+          <button
+            className="btn"
+            onClick={() => {
+              // setData([]);
+            }}
+          >
             Clear All
           </button>
           <button className="btn" onClick={() => filter()}>
@@ -87,11 +98,9 @@ const MenWinter = () => {
         </div>
       </div>
       {loading ? (
-        <div className="Loading_Icon">
-          <img src="https://img.icons8.com/ios/50/000000/spinner-frame-5.png" />
-        </div>
+        <div>LOADING</div>
       ) : (
-        <div className="summers">
+        <div className="summers" style={{ paddingTop: "100px" }}>
           {products.map((el, idx) => (
             <div key={idx}>
               <Link to="#">
@@ -99,16 +108,9 @@ const MenWinter = () => {
                   <i className="fas fa-heart" style={{ color: "white" }}></i>
                 </div>
               </Link>
-              <img src={el.src}></img>
-              <Link
-                to={{
-                  pathname: `/product/${el._id}`,
-                  // state: { url: data[idx], season: "winter" },
-                }}
-              >
-                <h4 style={{ backgroundColor: "crimson", color: "white" }}>
-                  Explore
-                </h4>
+              <img src={el.src} alt="f"></img>
+              <Link to={`/product/${el._id}`}>
+                <h4>Explore</h4>
               </Link>
             </div>
           ))}
@@ -118,4 +120,4 @@ const MenWinter = () => {
   );
 };
 
-export default MenWinter;
+export default OfficeMen;

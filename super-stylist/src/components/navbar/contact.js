@@ -1,13 +1,36 @@
-import React from "react";
+import { React,useState} from "react";
 import "./contact.css";
 import { Redirect } from "react-router-dom";
 function Contact() {
-  const [redirect, setRedirect] = React.useState(false);
+  const [redirect, setRedirect] = useState(false);
+  const [email,setEmail]=useState("");
+  const [name,setName]=useState("");
+  const [msg,setMsg]=useState("");
 
   function clickHandler() {
     console.log(`I am clicked`);
     setRedirect(true);
   }
+
+  const emailhandler=(e)=>{
+      setEmail(e.target.value);
+  }
+
+  const namehandler=(e)=>{
+    setName(e.target.value);
+  }
+
+  const msghandler=(e)=>{
+    setMsg(e.target.value)
+  }
+
+  const submitHandler=()=>{
+     setMsg("");
+     setName("");
+     setEmail("");
+  }
+  
+
   return (
     <>
       {redirect ? (
@@ -19,51 +42,47 @@ function Contact() {
               <i className="fas fa-times"></i>
             </span>
             <h1>Get in Touch</h1>
-            <h3>Feel free to drop us a line below!</h3>
+            <h4>Feel free to drop us a line below!</h4>
             <input
               className="field"
               type="text"
-              value=""
+              value={name}
               placeholder="Enter Your Name"
+              onChange={(e)=>namehandler(e)}
             />
-            <br />
-            <br />
             <input
               className="field"
               type="text"
-              value=""
+              value={email}
               placeholder="Enter your e-mail"
+              onChange={(e)=>emailhandler(e)}
             />
-            <br />
-            <br />
             <textarea
               className="textfield"
               type="text"
-              value=""
+              value={msg}
               placeholder="Type your message..."
+              onChange={(e)=>msghandler(e)}
             />
-            <br />
-            <br />
-            <button type="submit" className="send">
+            <button type="submit" className="send" onClick={submitHandler}>
               Send
             </button>
-          </div>
-          <div className="information">
-            <h2>Contact Us</h2>
-            <div className="mail-id">
-              <i class="material-icons">&#xe0be;</i>{" "}
-              sujatachandravanshi@gmail.com
-            </div>
-            <br></br>
-            <div className="linkedIn">
-              <i style={{ fontSize: "24px" }} className="fa">
-                &#xf08c;
-              </i>{" "}
-              suju123456789
-            </div>
-            <br></br>
-            <div className="phone">
-              <i class="material-icons">&#xe0cd;</i> +91 7896543210
+            <div className="information">
+              <h3>Contact Us</h3>
+              <div className="mail-id">
+                <i class="material-icons">&#xe0be;</i>{" "}
+                <div>sujatachandravanshi@gmail.com</div>
+              </div>
+              <div className="linkedIn">
+                <i style={{ fontSize: "24px" }} className="fa">
+                  &#xf08c;
+                </i>{" "}
+                <div>suju123456789</div>
+              </div>
+              <div className="phone">
+                <i class="material-icons">&#xe0cd;</i>
+                <div> +91 7896543210</div>
+              </div>
             </div>
           </div>
         </div>

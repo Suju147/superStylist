@@ -6,8 +6,6 @@ import About from "./navbar/about";
 import MainPage from "./Main/mainpage";
 import FashionTips from "./options/tips";
 import SlideShow from "./home files/slideshow";
-import MenCard from "./options/menCard";
-import WomenCard from "./options/womenCard";
 import LookBook from "./Main/lookbook";
 import MenCollection from "./Men/men";
 import WomenCollection from "./women/women";
@@ -16,20 +14,16 @@ import WomenWinter from "./women/WomenWinter";
 import SingleProd from "./women/SingleProd";
 import SummerMen from "./Men/menSummer";
 import MenWinter from "./Men/menWinter";
+import Profile from "./Profile";
 class Home extends React.Component {
- 
-
   render() {
     return (
       <>
         <BrowserRouter>
           <Switch>
             <Route exact path="/">
-              <MainPage
-              
-              />
+              <MainPage />
               <SlideShow />
-             
             </Route>
             <Route exact path="/login">
               <Login />
@@ -66,6 +60,9 @@ class Home extends React.Component {
             </Route>
             <Route exact path="/product/:id">
               <SingleProd />
+            </Route>
+            <Route path="/profile">
+              <Profile />
             </Route>
           </Switch>
         </BrowserRouter>
