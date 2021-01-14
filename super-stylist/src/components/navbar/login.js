@@ -54,7 +54,7 @@ function Login() {
     <>
       <div>
         {redirect ? (
-          <Redirect to="/" />
+          <Redirect to="/home" />
         ) : (
           <div className="login">
             <span className="close" onClick={clickHandler}>
@@ -66,7 +66,7 @@ function Login() {
                 <b>Login/SignUp</b> To quickly find your favourites styles,
                 saved your collections.
               </h4>
-              <img src="http://clipart-library.com/data_images/308739.jpg" />
+              <img src="http://clipart-library.com/data_images/308739.jpg"/>
             </div>
             <div className="right" style={{ backgroundColor: "crimson" }}>
               <h4 style={{ color: "white" }}>

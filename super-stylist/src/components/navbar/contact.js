@@ -1,42 +1,26 @@
-import { React,useState} from "react";
+import React from "react";
 import "./contact.css";
 import { Redirect } from "react-router-dom";
 function Contact() {
-  const [redirect, setRedirect] = useState(false);
-  const [email,setEmail]=useState("");
-  const [name,setName]=useState("");
-  const [msg,setMsg]=useState("");
+  const [redirect, setRedirect] = React.useState(false);
 
   function clickHandler() {
     console.log(`I am clicked`);
     setRedirect(true);
   }
-
-  const emailhandler=(e)=>{
-      setEmail(e.target.value);
-  }
-
-  const namehandler=(e)=>{
-    setName(e.target.value);
-  }
-
-  const msghandler=(e)=>{
-    setMsg(e.target.value)
-  }
-
-  const submitHandler=()=>{
-     setMsg("");
-     setName("");
-     setEmail("");
-  }
-  
-
   return (
     <>
       {redirect ? (
-        <Redirect to="/" />
+        <Redirect to="/home" />
       ) : (
-        <div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            paddingTop: "100px",
+          }}
+        >
           <div className="contact">
             <span className="closebtn" onClick={clickHandler}>
               <i className="fas fa-times"></i>
@@ -46,25 +30,22 @@ function Contact() {
             <input
               className="field"
               type="text"
-              value={name}
+              value=""
               placeholder="Enter Your Name"
-              onChange={(e)=>namehandler(e)}
             />
             <input
               className="field"
               type="text"
-              value={email}
+              value=""
               placeholder="Enter your e-mail"
-              onChange={(e)=>emailhandler(e)}
             />
             <textarea
               className="textfield"
               type="text"
-              value={msg}
+              value=""
               placeholder="Type your message..."
-              onChange={(e)=>msghandler(e)}
             />
-            <button type="submit" className="send" onClick={submitHandler}>
+            <button type="submit" className="send">
               Send
             </button>
             <div className="information">

@@ -19,9 +19,10 @@ class Home extends React.Component {
   render() {
     return (
       <>
+      
         <BrowserRouter>
           <Switch>
-            <Route exact path="/">
+            <Route exact path="/home">
               <MainPage />
               <SlideShow />
             </Route>

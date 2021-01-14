@@ -2,28 +2,27 @@ import React from "react";
 
 import "./HomePage.css";
 import Home from "../Home";
+import { Link, Redirect } from "react-router-dom";
 
 class HomePage extends React.Component {
   constructor() {
     super();
     this.state = {
-      questionaire: false,
+      homePage: false,
     };
     this.clickHandler = this.clickHandler.bind(this);
   }
 
   clickHandler() {
-    this.setState({
-      questionaire: true,
-    });
-    console.log(this.state.questionaire);
+    <Redirect to="/home" />
+    // this.setState({
+    //   homePage: true,
+    // });
+    //console.log(this.state.questionaire);
   }
   render() {
     return (
       <div>
-        {this.state.questionaire ? (
-          <Home />
-        ) : (
           <div className="bbgg">
             <div
               // className="set"
@@ -46,13 +45,13 @@ class HomePage extends React.Component {
                     <i>" Clothes that will talk on your behalf"</i>
                   </b>
                 </p>
-                <button className="start" onClick={this.clickHandler}>
+<Link to="/home">                <button className="btn">
                   Get Started
-                </button>
+                </button></Link>
               </div>
             </div>
           </div>
-        )}
+        )
       </div>
     );
   }

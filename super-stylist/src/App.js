@@ -19,6 +19,9 @@ import Deepika from "./components/lookbook/deepika";
 import WeddingMen from "./components/Men/menWedding";
 import OfficeMen from "./components/Men/menOffice";
 import Profile from "./components/Profile";
+import MainPage from "./components/Main/mainpage";
+import SlideShow from "./components/home files/slideshow";
+import Alert from "./components/Alert";
 
 class App extends React.Component {
   constructor() {
@@ -37,7 +40,7 @@ class App extends React.Component {
           <BrowserRouter>
             <Switch>
               <Route exact path="/login">
-                <Login moveto={this.moveto} />
+                <Login />
               </Route>
               <Route exact path="/About">
                 <About />
@@ -48,6 +51,10 @@ class App extends React.Component {
 
               <Route exact path="/">
                 <PublicHomePage />
+              </Route>
+              <Route path="/home">
+                <MainPage />
+                <SlideShow />
               </Route>
 
               <Route exact path="/FashionTips">
@@ -96,6 +103,7 @@ class App extends React.Component {
             </Switch>
           </BrowserRouter>
         </>
+        <Alert />
       </div>
     );
   }

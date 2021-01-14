@@ -65,16 +65,17 @@ input {
   padding: 10px 5px;
 }
 
-.btn_login_register:focus {
+/* .btn_login_register:focus {
   border: none;
   outline: none;
-}
+} */
 
 .frm_input {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
+
 
 .frm_input div {
   margin: 7px;

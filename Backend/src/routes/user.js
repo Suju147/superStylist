@@ -4,7 +4,6 @@ const mongoose = require("mongoose");
 const User = require("../UserSchema");
 const bcrypt = require("bcrypt");
 const jwtToken = require("jsonwebtoken");
-//frak h dono m..thik
 router.post("/signup", (req, res, next) => {
   User.find({ username: req.body.email })
     .exec()
@@ -52,9 +51,7 @@ router.post("/signup", (req, res, next) => {
         });
       }
     });
-  //routes chk krle>??hn thik
 });
-//token login and singup krte tym generate krna h or response m bvps frontend m snd krna h....hn mene likha tha code save ni kiya shayd
 router.post("/login", (req, res, next) => {
   User.find({ email: req.body.email })
     .exec()

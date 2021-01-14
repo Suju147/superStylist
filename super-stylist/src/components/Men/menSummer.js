@@ -4,12 +4,16 @@ import MainPage from "../Main/mainpage";
 import { useDispatch, useSelector } from "react-redux";
 import "../women/summer.css";
 import { getMensSummer } from "../../actions/getProducts";
+import axios from "axios";
 
 const SummerMen = () => {
   const [tone, setTone] = useState("");
   const [body, setBody] = useState("");
-  const [fltr,setFilter] = useState(false)
+  const [fltr, setFilter] = useState(false);
   const dispatch = useDispatch();
+
+  const USER = useSelector((state) => state.user);
+  const { loggedIn, user } = USER;
 
   const settonehandler = (e) => {
     setTone(e.target.value);
@@ -19,29 +23,51 @@ const SummerMen = () => {
     setBody(e.target.value);
   };
 
+  const favHandler = async (id, img) => {
+    dispatch({
+      type:"SHOW_ERROR",
+      payload:"Product has been added to Favourites"
+    })
+    console.log(id, img);
+    if (loggedIn) {
+      const config = {
+        headers: {
+          Authorization: `Bearer ${user.token}`,
+        },
+      };
+      const { data } = await axios.post(`/fav/${id}`, { img }, config);
+      console.log(data);
+    }
+    // setTimeout(()=>{
+    //   dispatch({
+    //     type:"REMOVE_ERROR",
+    //   })
+    // },5000)
+  };
+
   const MensSummer = useSelector((state) => state.MensSummer);
   const { loading, products } = MensSummer;
-  const [data,setData] = useState(products)
+  const [data, setData] = useState(products);
 
-  
-
-  const clearFilter = () =>{
-    setData(products)
-    setFilter(false)
-    setTone("")
-    setBody("")
-  }
+  const clearFilter = () => {
+    setData(products);
+    setFilter(false);
+    setTone("");
+    setBody("");
+  };
   const filter = () => {
-    setFilter(true)
-   setData(products.filter(prod=>prod.skin_tone === tone && prod.body_type === body))
+    setFilter(true);
+    setData(
+      products.filter(
+        (prod) => prod.skin_tone === tone && prod.body_type === body
+      )
+    );
   };
 
   useEffect(async () => {
-  
-      dispatch(getMensSummer())
-      setData(products)
+    dispatch(getMensSummer());
+    setData(products);
   }, [dispatch]);
-
 
   return (
     <div style={{ position: "relative" }}>
@@ -81,7 +107,6 @@ const SummerMen = () => {
             >
               <input
                 style={{ width: "20px", height: "20px" }}
-                
                 type="radio"
                 id="dark"
                 checked={tone === "brown"}
@@ -107,8 +132,8 @@ const SummerMen = () => {
                 style={{ width: "20px", height: "20px" }}
                 type="radio"
                 id="slim"
-                checked={body==="slim"}
                 name="body_type"
+                checked={body === "slim"}
                 value="slim"
                 onChange={(e) => {
                   setbodyhandler(e);
@@ -127,8 +152,8 @@ const SummerMen = () => {
               <input
                 style={{ width: "20px", height: "20px" }}
                 type="radio"
-                checked={body === "fat"}
                 id="fat"
+                checked={body === "fat"}
                 name="body_type"
                 value="fat"
                 onChange={(e) => {
@@ -141,6 +166,7 @@ const SummerMen = () => {
           <button
             className="btn"
             onClick={() => {
+              // setData([]);
               clearFilter();
             }}
           >
@@ -151,19 +177,23 @@ const SummerMen = () => {
           </button>
         </div>
       </div>
-     { loading ? (
+      {loading ? (
         <div className="Loading_Icon">
           <img src="https://img.icons8.com/ios/50/000000/spinner-frame-5.png" />
         </div>
       ) : (
         <div className="summers" style={{ paddingTop: "100px" }}>
-          {(fltr ? data :products) .map((el, idx) => (
+          {(fltr ? data : products).map((el, idx) => (
             <div key={idx}>
-              <Link to="#">
-                <div className="heart">
-                  <i className="fas fa-heart" style={{ color: "white" }}></i>
-                </div>
-              </Link>
+              <div className="heart">
+                <i
+                  className="fas fa-heart"
+                  onClick={() => {
+                    favHandler(el._id, el.src);
+                  }}
+                  style={{ color: "white" }}
+                ></i>
+              </div>
               <img src={el.src} alt="f"></img>
               <Link to={`/product/${el._id}`}>
                 <h4>Explore</h4>

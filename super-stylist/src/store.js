@@ -11,7 +11,8 @@ import {
   womenWeddingProdReducer,
   womenWinterProdReducer,
 } from "./reducers/productsReducer";
-import { loginreducer } from "./reducers/userReducers";
+import { loginreducer, setFav } from "./reducers/userReducers";
+import {alertReducer} from "./reducers/alert";
 
 const reducer = combineReducers({
   MensSummer: prodSummerProdReducer,
@@ -23,6 +24,8 @@ const reducer = combineReducers({
   WomenOffice: womenOfficeProdReducer,
   WomenWedding: womenWeddingProdReducer,
   user: loginreducer,
+  favourites: setFav,
+  alert:alertReducer,
 });
 
 // const user = localStorage.getItem("user")

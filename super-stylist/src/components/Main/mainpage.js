@@ -60,13 +60,11 @@ const MainPage = () => {
           </div>
         </nav>
       </header>
-
       <div className="options" style={{ display: "flex" }}>
         <div>
           <Link className="Men" to="/Men">
             Men
           </Link>
-
           <Link className="Women" to="/Women">
             Women
           </Link>
@@ -78,7 +76,7 @@ const MainPage = () => {
           </Link>
         </div>
         <div style={{ marginRight: "10px" }}>
-          <Link className="Home" to="/">
+          <Link className="Home" to="/home">
             Home
           </Link>
         </div>
