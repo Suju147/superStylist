@@ -4,12 +4,17 @@ import MainPage from "../Main/mainpage";
 import { useDispatch, useSelector } from "react-redux";
 import "../women/summer.css";
 import { getMensOffice } from "../../actions/getProducts";
+import axios from 'axios';
+import Filter from '../filter';
 
 const OfficeMen = () => {
   const [tone, setTone] = useState("");
   const [body, setBody] = useState("");
-
+  const [fltr, setFilter] = useState(false);
   const dispatch = useDispatch();
+
+  const USER = useSelector((state) => state.user);
+  const { loggedIn, user } = USER;
 
   const settonehandler = (e) => {
     setTone(e.target.value);
@@ -19,95 +24,76 @@ const OfficeMen = () => {
     setBody(e.target.value);
   };
 
+  const favHandler = async (id, img) => {
+  
+    console.log(id, img);
+    if (loggedIn) {
+      dispatch({
+        type:"SHOW_ERROR",
+        payload:"Product has been added to Favourites"
+      })
+      const config = {
+        headers: {
+          Authorization: `Bearer ${user.token}`,
+        },
+      };
+      const { data } = await axios.post(`/fav/${id}`, { img }, config);
+      console.log(data);
+    }
+    else{
+      dispatch({
+        type:"ERROR",
+        payload:"Please Login!"
+      })
+    }
+    
+  };
+
   const MensOffice = useSelector((state) => state.MensOffice);
   const { loading, products } = MensOffice;
+  const [data, setData] = useState(products);
 
-  const filter = () => {};
+  const clearFilter = () => {
+    setData(products);
+    setFilter(false);
+    setTone("");
+    setBody("");
+  };
+  const filter = () => {
+    setFilter(true);
+    setData(
+      products.filter(
+        (prod) => prod.skin_tone === tone && prod.body_type === body
+      )
+    );
+  };
 
   useEffect(async () => {
     dispatch(getMensOffice());
+    setData(products);
   }, [dispatch]);
+
   return (
     <div style={{ position: "relative" }}>
       <MainPage />
-      <div className="filter_bar">
-        <div className="sidebar">
-          <div>
-            <h2 style={{ color: "crimson" }}>Filters</h2>
-            <h3>Skin Tone</h3>
-
-            <input
-              type="radio"
-              id="fair"
-              name="skin_tone"
-              value="fair"
-              onChange={(e) => {
-                settonehandler(e);
-              }}
-            ></input>
-            <label for="fair">Fair-Medium</label>
-            <br />
-            <input
-              type="radio"
-              id="dark"
-              name="skin_tone"
-              value="brown"
-              onChange={(e) => {
-                settonehandler(e);
-              }}
-            ></input>
-            <label for="dark">Medium-dark</label>
-          </div>
-          <div>
-            <h3>Body Type</h3>
-
-            <input
-              type="radio"
-              id="slim"
-              name="body_type"
-              value="slim"
-              onChange={(e) => {
-                setbodyhandler(e);
-              }}
-            ></input>
-            <label for="slim">Slim-Fit</label>
-            <br />
-
-            <input
-              type="radio"
-              id="fat"
-              name="body_type"
-              value="fat"
-              onChange={(e) => {
-                setbodyhandler(e);
-              }}
-            ></input>
-            <label for="fat">Fit-Heavy</label>
-          </div>
-          <button
-            className="btn"
-            onClick={() => {
-              // setData([]);
-            }}
-          >
-            Clear All
-          </button>
-          <button className="btn" onClick={() => filter()}>
-            Apply
-          </button>
-        </div>
-      </div>
+     <Filter clearFilter={clearFilter} filter={filter} setbodyhandler={setbodyhandler} settonehandler={settonehandler} tone={tone} body={body}/>
       {loading ? (
-        <div>LOADING</div>
+        <div className="Loading_Icon">
+          <img src="https://img.icons8.com/ios/50/000000/spinner-frame-5.png" />
+        </div>
       ) : (
         <div className="summers" style={{ paddingTop: "100px" }}>
-          {products.map((el, idx) => (
+          {(fltr ? data : products).map((el, idx) => (
             <div key={idx}>
-              <Link to="#">
-                <div className="heart">
-                  <i className="fas fa-heart" style={{ color: "white" }}></i>
-                </div>
-              </Link>
+              <div className="heart">
+                <i
+                  className="fas fa-heart"
+                  onClick={() => {
+                    favHandler(el._id, el.src);
+                  }}
+                  style={{ color: "white" }}
+                ></i>
+              </div>
               <img src={el.src} alt="f"></img>
               <Link to={`/product/${el._id}`}>
                 <h4>Explore</h4>

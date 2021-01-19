@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./singleprod.css";
-import { useParams } from "react-router-dom";
+import { Redirect, useParams } from "react-router-dom";
 import MainPage from "../Main/mainpage";
 import axios from "axios";
 
@@ -16,8 +16,8 @@ const SingleProd = () => {
     setLoading(false);
   }, []);
 
-  // const loc = useLocation();
-  // const url = loc.state.url;
+ 
+  
   return (
     <>
       <MainPage />
@@ -43,7 +43,7 @@ const SingleProd = () => {
             <h2>{prodData.suggestion}</h2>
 
             <div>
-              <button className="btn">check Occasion</button>
+              <button className="btn">Explore more</button>
               <button className="btn btn2">Add to Favourites</button>
             </div>
           </div>

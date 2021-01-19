@@ -42,7 +42,7 @@ class FashionTips extends React.Component {
               <h1>Tips for Skinny Girls</h1>
               <p>Fashion styling tips and outfit ideas for Skinny girls.</p>
               <p>
-                <button className="tips">Tips</button>
+                <a href="https://fashionisers.com/2019/07/11/fashion-tips-for-skinny-girls/" target="_blank"><button className="tips">Tips</button></a>
               </p>
             </div>
             <div className="card">
@@ -54,7 +54,7 @@ class FashionTips extends React.Component {
               <h1>Tips for Curvy Girls</h1>
               <p>Fashion Styling Tips and Outfit Ideas for Curvy girls.</p>
               <p>
-                <button className="tips">Tips</button>
+                <a href="https://www.looksgud.in/blog/plus-size-fashion-tips-tricks-what-to-wear/" target="_blank"><button className="tips">Tips</button></a>
               </p>
             </div>
             <div className="card">
@@ -66,7 +66,7 @@ class FashionTips extends React.Component {
               <h1>Tips for Brown Girls</h1>
               <p>Fashion Styling Tips and Outfit Ideas for brown girls .</p>
               <p>
-                <button className="tips">Tips</button>
+                <a href="https://www.outfittrends.com/outfits-for-dark-skin-teen-girls/#:~:text=Tones%20of%20Blue%20and%20Red,tone%20appear%20bright%20and%20glowy." target="_blank"><button className="tips">Tips</button></a>
               </p>
             </div>
             <div className="card">
@@ -78,7 +78,7 @@ class FashionTips extends React.Component {
               <h1>Ideas for Thin Guys</h1>
               <p>Fashion styling tips and outfit ideas for Skinny guys.</p>
               <p>
-                <button className="tips">Tips</button>
+                <a href="https://www.artofmanliness.com/articles/6-style-tips-for-the-skinny-guy/" target="_blank"><button className="tips">Tips</button></a>
               </p>
             </div>
             <div className="card">
@@ -89,7 +89,7 @@ class FashionTips extends React.Component {
               <h1>Ideas for Large Man</h1>
               <p>Fashion styling tips and outfit ideas for Large Man.</p>
               <p>
-                <button className="tips">Tips</button>
+                <a href="https://www.artofmanliness.com/articles/large-man-style/" target="_blank"><button className="tips">Tips</button></a>
               </p>
             </div>
             <div className="card">
@@ -100,7 +100,7 @@ class FashionTips extends React.Component {
               <h1>Casual Styling Ideas </h1>
               <p>Style your Casual looks to not look casual.</p>
               <p>
-                <button className="tips">Tips</button>
+                <a href="https://restartyourstyle.com/2770/casual-style-tips-for-guys/" target="_blank"><button className="tips">Tips</button></a>
               </p>
             </div>
           </div>

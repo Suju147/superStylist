@@ -7,55 +7,61 @@ const genToken = require("../genToken");
 
 router.post("/login", async (req, res) => {
   const { email, password } = req.body;
-  // console.log(email, password);
-  const user = await User.findOne({ email });
-  // console.log(user);
-  if (!user) {
-    res.send({ error: "User Not Found" });
-  } else {
-    if (await bcrypt.compare(password, user.password)) {
-      res.send({
-        id: user._id,
-        username: user.username,
-        token: genToken(user._id),
-      });
+  try {
+    const user = await User.findOne({ email });
+    if (!user) {
+      res.send({ error: "User Not Found" });
     } else {
-      res.send({
-        error: "Invalid Creds",
-      });
-    }
+      if (await bcrypt.compare(password, user.password)) {
+        res.send({
+          id: user._id,
+          username: user.username,
+          token: genToken(user._id),
+        });
+      } else {
+        res.send({
+          error: "Invalid Creds",
+        });
+      }
+    } 
+  } catch (err) {
+    res.send({error:err})
   }
 });
 
 router.post("/register", async (req, res) => {
   var { email, password, username } = req.body;
-  const nuser = await User.findOne({ email });
-  if (nuser) {
-    res.send({
-      error: "User Already Exists",
-    });
-  } else {
-    const salt = await bcrypt.genSalt(10);
-    password = await bcrypt.hash(password, salt);
-
-    const user = new User({
-      email,
-      password,
-      username,
-    });
-
-    const createdUser = await user.save();
-    if (createdUser) {
+  try {
+    const nuser = await User.findOne({ email });
+    if (nuser) {
       res.send({
-        id: createdUser._id,
-        username: createdUser.username,
-        token: genToken(user._id),
+        error: "User Already Exists",
       });
     } else {
-      res.send({
-        error: "Error Creating User",
+      const salt = await bcrypt.genSalt(10);
+      password = await bcrypt.hash(password, salt);
+  
+      const user = new User({
+        email,
+        password,
+        username,
       });
+  
+      const createdUser = await user.save();
+      if (createdUser) {
+        res.send({
+          id: createdUser._id,
+          username: createdUser.username,
+          token: genToken(user._id),
+        });
+      } else {
+        res.send({
+          error: "Error Creating User",
+        });
+      }
     }
+  } catch (err) {
+    res.send({error:err})
   }
 });
 

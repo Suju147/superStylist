@@ -11,7 +11,7 @@ function About() {
   return (
     <>
       {redirect ? (
-        <Redirect to="/" />
+        <Redirect to="/home" />
       ) : (
         <div className="about_us">
           <h1 className="head">
@@ -47,7 +47,7 @@ function About() {
             <b>**Explore more to Enhance your Personality!!**</b>
           </div>
 
-          <div>
+          <div style={{marginTop:'4%'}}>
             <button className="btn" onClick={clickHandler}>
               Back
             </button>

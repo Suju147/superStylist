@@ -8,20 +8,18 @@ const verifyToken = async (req, res, next) => {
     req.headers.authorization.startsWith("Bearer")
   ) {
     try {
-      // console.log(req.headers.authorization);
       token = req.headers.authorization.split(" ")[1];
-      //   console.log(token);
       const decode = jwt.verify(token, "MY_SECRET");
-      //   console.log(decode);
       req.user = await User.findById(decode.id).select("-password");
-      //   console.log(req.user);
       next();
     } catch (err) {
       console.log(err);
+      res.send({error:err})  
     }
   } else {
     res.send("401");
     console.log("Not authorized");
+    res.send({error:"Not authorized"})
   }
 };
 

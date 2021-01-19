@@ -90,28 +90,28 @@ router.post("/login", (req, res, next) => {
           }
         });
       }
-    });
+    }).catch(err=>res.send({error:err}));
 });
 
-router.delete("/:user_id", async (req, res, next) => {
-  User.find({ _id: req.params.user_id })
-    .exec()
-    .then((user) => {
-      if (user.length === 0) {
-        res.status(404).send({
-          messge: "user not found",
-        });
-      } else {
-        User.remove({ _id: req.params.user_id });
-        res.status(200).send({
-          message: `${user.username} deleted`,
-        });
-      }
-    })
-    .catch((err) => {
-      res.status(500).send({
-        error: err,
-      });
-    });
-});
+// router.delete("/:user_id", async (req, res, next) => {
+//   User.find({ _id: req.params.user_id })
+//     .exec()
+//     .then((user) => {
+//       if (user.length === 0) {
+//         res.status(404).send({
+//           messge: "user not found",
+//         });
+//       } else {
+//         User.remove({ _id: req.params.user_id });
+//         res.status(200).send({
+//           message: `${user.username} deleted`,
+//         });
+//       }
+//     })
+//     .catch((err) => {
+//       res.status(500).send({
+//         error: err,
+//       });
+//     });
+// });
 module.exports = router;

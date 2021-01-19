@@ -22,6 +22,8 @@ import Profile from "./components/Profile";
 import MainPage from "./components/Main/mainpage";
 import SlideShow from "./components/home files/slideshow";
 import Alert from "./components/Alert";
+import WomenOffice from "./components/women/WomenOffice";
+import WomenWedding from "./components/women/WomenWedding";
 
 class App extends React.Component {
   constructor() {
@@ -75,6 +77,12 @@ class App extends React.Component {
               <Route exact path="/women_winter">
                 <WomenWinter />
               </Route>
+              <Route exact path='/women_office'>
+                <WomenOffice/>
+              </Route>
+              <Route exact path='/women_wedding'>
+                <WomenWedding/>
+              </Route>
               <Route exact path="/men_winter">
                 <MenWinter />
               </Route>
@@ -87,6 +95,7 @@ class App extends React.Component {
               <Route exact path="/men_wedding">
                 <WeddingMen />
               </Route>
+              
               <Route exact path="/product/:id">
                 <SingleProd />
               </Route>

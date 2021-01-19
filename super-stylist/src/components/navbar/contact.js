@@ -3,10 +3,28 @@ import "./contact.css";
 import { Redirect } from "react-router-dom";
 function Contact() {
   const [redirect, setRedirect] = React.useState(false);
+  const [name,setName]=React.useState('');
+  const [email,setEmail]=React.useState('');
+  const [msg,setMsg]=React.useState('');
 
   function clickHandler() {
     console.log(`I am clicked`);
     setRedirect(true);
+  }
+
+  const namehandler=(e)=>{
+    setName(e.target.value);
+  }
+  const emailHandler=(e)=>{
+    setEmail(e.target.value);
+  }
+  const msgHandler=(e)=>{
+    setMsg(e.target.value);
+  }
+  const submitHandler=()=>{
+   setName('');
+   setMsg('');
+   setEmail('');
   }
   return (
     <>
@@ -30,22 +48,26 @@ function Contact() {
             <input
               className="field"
               type="text"
-              value=""
+              value={name}
               placeholder="Enter Your Name"
+
+              onChange={namehandler}
             />
             <input
               className="field"
               type="text"
-              value=""
+              value={email}
               placeholder="Enter your e-mail"
+              onChange={emailHandler}
             />
             <textarea
               className="textfield"
               type="text"
-              value=""
+              value={msg}
               placeholder="Type your message..."
+              onChange={msgHandler}
             />
-            <button type="submit" className="send">
+            <button type="submit" className="send" onClick={submitHandler}>
               Send
             </button>
             <div className="information">

@@ -33,7 +33,7 @@ class WomenCollection extends React.Component {
                 <h2 className="TAG_women">Women's Summer Collection</h2>
               </div>
             </Link>
-            <Link to="women_winter">
+            <Link to="/women_winter">
               <div
                 className="hola_women"
                 style={{
@@ -46,7 +46,8 @@ class WomenCollection extends React.Component {
                 <h2 className="TAG_women">Women's Winter Collection</h2>
               </div>
             </Link>
-            <div
+            <Link to='/women_office'>
+              <div
               className="hola_women"
               style={{
                 backgroundImage:
@@ -57,7 +58,9 @@ class WomenCollection extends React.Component {
             >
               <h2 className="TAG_women">Women's Office Collection</h2>
             </div>
-            <div
+            </Link>
+            <Link to='/women_wedding'>
+              <div
               className="hola_women"
               style={{
                 backgroundImage:
@@ -68,6 +71,7 @@ class WomenCollection extends React.Component {
             >
               <h2 className="TAG_women">Women's Wedding Collection</h2>
             </div>
+            </Link>
           </div>
         </div>
       </>

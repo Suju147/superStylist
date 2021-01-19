@@ -1,13 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState,useEffect } from "react";
 import { Link } from "react-router-dom";
 import MainPage from "../Main/mainpage";
 import { useDispatch, useSelector } from "react-redux";
-import "../women/summer.css";
-import { getMensSummer } from "../../actions/getProducts";
-import axios from "axios";
-import Filter from "../filter";
+import Filter from '../filter';
+import axios from 'axios';
+import {getWomensWedding } from "../../actions/getProducts"
 
-const SummerMen = () => {
+const WomenWedding = () => {
   const [tone, setTone] = useState("");
   const [body, setBody] = useState("");
   const [fltr, setFilter] = useState(false);
@@ -25,6 +24,7 @@ const SummerMen = () => {
   };
 
   const favHandler = async (id, img) => {
+  
     console.log(id, img);
     if (loggedIn) {
       dispatch({
@@ -37,17 +37,19 @@ const SummerMen = () => {
         },
       };
       const { data } = await axios.post(`/fav/${id}`, { img }, config);
-    }else{
+      console.log(data);
+    }
+    else{
       dispatch({
         type:"ERROR",
-        payload:"Please Login"
+        payload:"Please Login!"
       })
     }
     
   };
 
-  const MensSummer = useSelector((state) => state.MensSummer);
-  const { loading, products } = MensSummer;
+  const WomenWedding = useSelector((state) => state.WomenWedding);
+  const { loading, products } = WomenWedding;
   const [data, setData] = useState(products);
 
   const clearFilter = () => {
@@ -66,7 +68,7 @@ const SummerMen = () => {
   };
 
   useEffect(async () => {
-    dispatch(getMensSummer());
+    dispatch(getWomensWedding());
     setData(products);
   }, [dispatch]);
 
@@ -103,4 +105,4 @@ const SummerMen = () => {
   );
 };
 
-export default SummerMen;
+export default WomenWedding;

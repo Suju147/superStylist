@@ -1,79 +1,108 @@
-import React, { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import React, { useState,useEffect } from "react";
 import { Link } from "react-router-dom";
-import { getWomensSummer } from "../../actions/getProducts";
 import MainPage from "../Main/mainpage";
-import "./summer.css";
+import { useDispatch, useSelector } from "react-redux";
+import Filter from '../filter';
+import axios from 'axios';
+import {getWomensSummer } from "../../actions/getProducts"
 
-const SummerWomen = () => {
+const WomenSummer = () => {
+  const [tone, setTone] = useState("");
+  const [body, setBody] = useState("");
+  const [fltr, setFilter] = useState(false);
   const dispatch = useDispatch();
 
+  const USER = useSelector((state) => state.user);
+  const { loggedIn, user } = USER;
+
+  const settonehandler = (e) => {
+    setTone(e.target.value);
+  };
+
+  const setbodyhandler = (e) => {
+    setBody(e.target.value);
+  };
+
+  const favHandler = async (id, img) => {
+  
+    console.log(id, img);
+    if (loggedIn) {
+      dispatch({
+        type:"SHOW_ERROR",
+        payload:"Product has been added to Favourites"
+      })
+      const config = {
+        headers: {
+          Authorization: `Bearer ${user.token}`,
+        },
+      };
+      const { data } = await axios.post(`/fav/${id}`, { img }, config);
+      console.log(data);
+    }
+    else{
+      dispatch({
+        type:"ERROR",
+        payload:"Please Login!"
+      })
+    }
+    
+  };
+
   const WomenSummer = useSelector((state) => state.WomenSummer);
-
   const { loading, products } = WomenSummer;
+  const [data, setData] = useState(products);
 
-  useEffect(() => {
+  const clearFilter = () => {
+    setData(products);
+    setFilter(false);
+    setTone("");
+    setBody("");
+  };
+  const filter = () => {
+    setFilter(true);
+    setData(
+      products.filter(
+        (prod) => prod.skin_tone === tone && prod.body_type === body
+      )
+    );
+  };
+
+  useEffect(async () => {
     dispatch(getWomensSummer());
+    setData(products);
   }, [dispatch]);
 
   return (
-    <div>
+    <div style={{ position: "relative" }}>
       <MainPage />
-
-      <div className="filter_bar">
-        <div className="sidebar">
-          <div>
-            <h2 style={{ color: "crimson" }}>Filters</h2>
-            <h3>Skin Tone</h3>
-
-            <input type="radio" id="fair" name="skin_tone" value="fair"></input>
-            <label for="fair">Fair-Medium</label>
-            <br />
-
-            <input
-              type="radio"
-              id="dark"
-              name="skin_tone"
-              value="brown"
-            ></input>
-            <label for="dark">Medium-dark</label>
-          </div>
-          <div>
-            <h3>Body Type</h3>
-
-            <input type="radio" id="slim" name="body_type" value="slim"></input>
-            <label for="slim">Slim-Fit</label>
-            <br />
-
-            <input type="radio" id="fat" name="body_type" value="fat"></input>
-            <label for="fat">Fit-Heavy</label>
-          </div>
-          <button className="btn">Clear All</button>
-          <button className="btn">Apply</button>
+     <Filter clearFilter={clearFilter} filter={filter} setbodyhandler={setbodyhandler} settonehandler={settonehandler} tone={tone}  body={body}/>
+      {loading ? (
+        <div className="Loading_Icon">
+          <img src="https://img.icons8.com/ios/50/000000/spinner-frame-5.png" />
         </div>
-      </div>
-      <div className="summers">
-        {products.map((el, idx) => (
-          <div key={idx}>
-            <Link to="#">
+      ) : (
+        <div className="summers" style={{ paddingTop: "100px" }}>
+          {(fltr ? data : products).map((el, idx) => (
+            <div key={idx}>
               <div className="heart">
-                <i className="fas fa-heart" style={{ color: "white" }}></i>
+                <i
+                  className="fas fa-heart"
+                  onClick={() => {
+                    favHandler(el._id, el.src);
+                  }}
+                  style={{ color: "white" }}
+                ></i>
               </div>
-            </Link>
-            <img src={el.src} alt="f"></img>
-            <Link
-              to={{
-                pathname: `/product/${el._id}`,
-                // state: { url: data[idx], season: "summer" },
-              }}
-            >
-              <h4>Explore</h4>
-            </Link>
-          </div>
-        ))}
-      </div>
+              <img src={el.src} alt="f"></img>
+              <Link to={`/product/${el._id}`}>
+                <h4>Explore</h4>
+              </Link>
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 };
 
-export default SummerWomen;
+export default WomenSummer;

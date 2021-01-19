@@ -33,32 +33,49 @@ router.post("/", (req, res) => {
 //
 //
 router.get("/men_summer", async (req, res) => {
-  const result = await Product.find(
-    { gender: "male" } && { product_type: "summer" }
-  );
-  res.status(200).send(result);
+  try {
+    const result = await Product.find(
+      { "gender": "male" , "product_type": "summer" }
+    );
+    res.status(200).send(result);
+  } catch (err) {
+    res.send({error:err})
+  }
 });
 
 router.get("/men_winter", async (req, res) => {
-  const result = await Product.find(
-    { gender: "male" } && { product_type: "winter" }
-  );
-  res.send(result);
+  try {
+    const result = await Product.find(
+      { "gender": "male" , "product_type": "summer" }
+    );
+    res.send(result);  
+  } catch (err) {
+    res.send({error:err})
+  }
 });
 
 router.get("/men_office", async (req, res) => {
-  const result = await Product.find(
-    { gender: "male" } && { product_type: "office" }
-  );
-  res.send(result);
+  try {
+    const result = await Product.find(
+      { "gender": "male" , "product_type": "office" }
+    );
+    res.send(result);
+  
+  } catch (err) {
+  res.send({error:err})    
+  }  
 });
 
 router.get("/men_wedding", async (req, res) => {
-  const result = await Product.find(
-    { gender: "male" } && { product_type: "wedding" }
-  );
-  res.send(result);
-});
+  try {
+    const result = await Product.find(
+      { "gender": "male" , "product_type": "wedding" }
+    );
+    res.send(result);  
+  } catch (err) {
+    res.send({error:err})
+  }
+  });
 //
 //
 //
@@ -67,31 +84,54 @@ router.get("/men_wedding", async (req, res) => {
 //
 //
 router.get("/women_winter", async (req, res) => {
-  const result = await Product.find(
-    { gender: "female" } && { product_type: "winter" }
-  );
-  res.send(result);
+  try {
+    const result = await Product.find(
+      { "gender": "female" , "product_type": "winter"}
+    );
+    res.send(result);
+     
+  } catch (err) {
+    res.send({error:err})
+  }  
 });
 
 router.get("/women_summer", async (req, res) => {
-  const result = await Product.find(
-    { gender: "female" } && { product_type: "summer" }
-  );
-  res.send(result);
+ console.log("hit")
+  try {
+    const result = await Product.find(
+      { "gender": "female" , "product_type": "summer"}
+    );
+    res.send(result);
+     
+  } catch (err) {
+    res.send({error:err})
+  } 
 });
 
 router.get("/women_office", async (req, res) => {
-  const result = await Product.find(
-    { gender: "female" } && { product_type: "office" }
-  );
-  res.send(result);
+  
+  try {
+    const result = await Product.find(
+      { "gender": "female" , "product_type": "office"}
+    );
+    res.send(result);
+     
+  } catch (err) {
+    res.send({error:err})
+  } 
 });
 
 router.get("/women_wedding", async (req, res) => {
-  const result = await Product.find(
-    { gender: "female" } && { product_type: "wedding" }
-  );
-  res.send(result);
+  
+  try {
+    const result = await Product.find(
+      { "gender": "female" , "product_type": "wedding"}
+    );
+    res.send(result);
+     
+  } catch (err) {
+    res.send({error:err})
+  } 
 });
 //
 //
@@ -101,8 +141,13 @@ router.get("/women_wedding", async (req, res) => {
 //
 //
 router.get("/:_id", async (req, res) => {
-  const result = await Product.find({ _id: req.params._id });
+  
+  try {
+    const result = await Product.find({ _id: req.params._id });
   res.send(result);
+  } catch (err) {
+    res.send({error:err})
+  } 
 });
 
 module.exports = router;

@@ -118,10 +118,11 @@ function Login() {
                   <button
                     className="login_btn btn"
                     style={{
-                      margin: "10px 5px",
+                      margin: "5px 5px",
                       backgroundColor: "black",
                       color: "white",
                       padding: "4px 7px",
+                      float:'right',
                     }}
                     onClick={() => loginHandler()}
                   >

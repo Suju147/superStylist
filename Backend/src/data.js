@@ -1,6 +1,5 @@
 const data = [
   {
-    _id: "5ff388ac3bb94f23e85f2b1d",
     gender: "male",
     skin_tone: "brown",
     body_type: "slim",
@@ -15,7 +14,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff38a233bb94f23e85f2b1f",
     gender: "male",
     skin_tone: "brown",
     body_type: "slim",
@@ -30,7 +28,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff38b663bb94f23e85f2b21",
     gender: "male",
     skin_tone: "brown",
     body_type: "slim",
@@ -45,7 +42,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff38c253bb94f23e85f2b23",
     gender: "male",
     skin_tone: "brown",
     body_type: "slim",
@@ -60,7 +56,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff38c9c3bb94f23e85f2b25",
     gender: "male",
     skin_tone: "brown",
     body_type: "slim",
@@ -75,7 +70,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff38ea53bb94f23e85f2b27",
     gender: "male",
     skin_tone: "brown",
     body_type: "slim",
@@ -89,7 +83,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff38ff13bb94f23e85f2b29",
     gender: "male",
     skin_tone: "brown",
     body_type: "slim",
@@ -103,7 +96,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff391bb3bb94f23e85f2b2b",
     gender: "male",
     skin_tone: "brown",
     body_type: "slim",
@@ -116,7 +108,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff3932e3bb94f23e85f2b2d",
     gender: "male",
     skin_tone: "brown",
     body_type: "slim",
@@ -130,7 +121,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff394b33bb94f23e85f2b2f",
     gender: "male",
     skin_tone: "brown",
     body_type: "slim",
@@ -144,7 +134,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff395d33bb94f23e85f2b31",
     gender: "male",
     skin_tone: "fair",
     body_type: "slim",
@@ -158,7 +147,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff396533bb94f23e85f2b33",
     gender: "male",
     skin_tone: "fair",
     body_type: "slim",
@@ -173,7 +161,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff396ee3bb94f23e85f2b35",
     gender: "male",
     skin_tone: "fair",
     body_type: "slim",
@@ -186,22 +173,19 @@ const data = [
       "https://www.valextino.com/wp-content/uploads/2019/06/Glamorous-Men-Formal-Dresses-Ideas-For-2019-55.jpg",
     __v: 0,
   },
+  // {
+  //   gender: "male",
+  //   skin_tone: "fair",
+  //   body_type: "slim",
+  //   product_type: "office",
+  //   statement: "White shirt-grey pant-blue Blazer",
+  //   ocassion:
+  //     "You can try this look in office meetings and office persentations ,office parties and office casual days.",
+  //   suggestion: "Look is perfect.",
+  //   // src:
+  //   __v: 0,
+  // },
   {
-    _id: "5ff397853bb94f23e85f2b37",
-    gender: "male",
-    skin_tone: "fair",
-    body_type: "slim",
-    product_type: "office",
-    statement: "White shirt-grey pant-blue Blazer",
-    ocassion:
-      "You can try this look in office meetings and office persentations ,office parties and office casual days.",
-    suggestion: "Look is perfect.",
-    src:
-      "https://cdn.shopify.com/s/files/1/0162/2116/files/Formal_outfit_ideas_for_men_18.jpg?v=1512106528",
-    __v: 0,
-  },
-  {
-    _id: "5ff398313bb94f23e85f2b39",
     gender: "male",
     skin_tone: "fair",
     body_type: "slim",
@@ -216,7 +200,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff399fa3bb94f23e85f2b3b",
     gender: "male",
     skin_tone: "fair",
     body_type: "slim",
@@ -230,7 +213,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff39a973bb94f23e85f2b3d",
     gender: "male",
     skin_tone: "fair",
     body_type: "slim",
@@ -244,7 +226,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff39b2e3bb94f23e85f2b3f",
     gender: "male",
     skin_tone: "fair",
     body_type: "slim",
@@ -258,7 +239,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff39c1a3bb94f23e85f2b41",
     gender: "male",
     skin_tone: "fair",
     body_type: "slim",
@@ -272,7 +252,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff39ca03bb94f23e85f2b43",
     gender: "male",
     skin_tone: "fair",
     body_type: "slim",
@@ -286,7 +265,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff441abb5b8083f6ceab219",
     gender: "male",
     skin_tone: "fair",
     body_type: "slim",
@@ -301,7 +279,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff446e2b5b8083f6ceab21b",
     gender: "male",
     skin_tone: "fair",
     body_type: "slim",
@@ -316,7 +293,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff4486db5b8083f6ceab21d",
     gender: "male",
     skin_tone: "fair",
     body_type: "slim",
@@ -329,7 +305,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff448d6b5b8083f6ceab21f",
     gender: "male",
     skin_tone: "fair",
     body_type: "slim",
@@ -342,7 +317,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff449e3b5b8083f6ceab221",
     gender: "male",
     skin_tone: "fair",
     body_type: "slim",
@@ -356,7 +330,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff44ab9b5b8083f6ceab223",
     gender: "male",
     skin_tone: "fair",
     body_type: "slim",
@@ -371,7 +344,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff44bebb5b8083f6ceab225",
     gender: "male",
     skin_tone: "fair",
     body_type: "slim",
@@ -385,7 +357,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff44e26b5b8083f6ceab227",
     gender: "male",
     skin_tone: "fair",
     body_type: "slim",
@@ -400,7 +371,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff44faeb5b8083f6ceab229",
     gender: "male",
     skin_tone: "fair",
     body_type: "slim",
@@ -415,7 +385,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff4507fb5b8083f6ceab22b",
     gender: "male",
     skin_tone: "fair",
     body_type: "slim",
@@ -429,7 +398,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff453f2b5b8083f6ceab22d",
     gender: "male",
     skin_tone: "brown",
     body_type: "slim",
@@ -443,7 +411,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff463e7b5b8083f6ceab22f",
     gender: "male",
     skin_tone: "brown",
     body_type: "slim",
@@ -457,7 +424,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff46453b5b8083f6ceab231",
     gender: "male",
     skin_tone: "brown",
     body_type: "slim",
@@ -471,7 +437,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff464e7b5b8083f6ceab233",
     gender: "male",
     skin_tone: "brown",
     body_type: "slim",
@@ -485,7 +450,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff4656ab5b8083f6ceab235",
     gender: "male",
     skin_tone: "brown",
     body_type: "slim",
@@ -498,7 +462,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff465d3b5b8083f6ceab237",
     gender: "male",
     skin_tone: "brown",
     body_type: "slim",
@@ -512,7 +475,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff4664bb5b8083f6ceab239",
     gender: "male",
     skin_tone: "brown",
     body_type: "slim",
@@ -526,7 +488,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff466cab5b8083f6ceab23b",
     gender: "male",
     skin_tone: "brown",
     body_type: "slim",
@@ -540,7 +501,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff46758b5b8083f6ceab23d",
     gender: "male",
     skin_tone: "brown",
     body_type: "slim",
@@ -554,7 +514,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff467eab5b8083f6ceab23f",
     gender: "male",
     skin_tone: "brown",
     body_type: "slim",
@@ -568,7 +527,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff46ad8b5b8083f6ceab241",
     gender: "male",
     skin_tone: "fair",
     body_type: "slim",
@@ -582,7 +540,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff46b74b5b8083f6ceab243",
     gender: "male",
     skin_tone: "fair",
     body_type: "slim",
@@ -596,7 +553,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff46bf6b5b8083f6ceab245",
     gender: "male",
     skin_tone: "fair",
     body_type: "slim",
@@ -609,7 +565,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff46ca1b5b8083f6ceab247",
     gender: "male",
     skin_tone: "fair",
     body_type: "slim",
@@ -622,7 +577,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff46d1eb5b8083f6ceab249",
     gender: "male",
     skin_tone: "fair",
     body_type: "slim",
@@ -636,7 +590,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff46d87b5b8083f6ceab24b",
     gender: "male",
     skin_tone: "fair",
     body_type: "slim",
@@ -650,7 +603,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff46e02b5b8083f6ceab24d",
     gender: "male",
     skin_tone: "fair",
     body_type: "slim",
@@ -665,7 +617,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff46e73b5b8083f6ceab24f",
     gender: "male",
     skin_tone: "fair",
     body_type: "slim",
@@ -679,7 +630,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff46ed9b5b8083f6ceab251",
     gender: "male",
     skin_tone: "fair",
     body_type: "slim",
@@ -692,7 +642,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff46f5fb5b8083f6ceab253",
     gender: "male",
     skin_tone: "fair",
     body_type: "slim",
@@ -706,7 +655,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff4acb6b5b8083f6ceab255",
     gender: "male",
     skin_tone: "brown",
     body_type: "slim",
@@ -720,7 +668,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff4ae32b5b8083f6ceab257",
     gender: "male",
     skin_tone: "brown",
     body_type: "slim",
@@ -734,7 +681,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff4af24b5b8083f6ceab259",
     gender: "male",
     skin_tone: "brown",
     body_type: "slim",
@@ -748,7 +694,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff4afb3b5b8083f6ceab25b",
     gender: "male",
     skin_tone: "brown",
     body_type: "slim",
@@ -761,7 +706,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff4b030b5b8083f6ceab25d",
     gender: "male",
     skin_tone: "brown",
     body_type: "slim",
@@ -775,7 +719,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff4b0c6b5b8083f6ceab25f",
     gender: "male",
     skin_tone: "brown",
     body_type: "slim",
@@ -789,7 +732,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff4b133b5b8083f6ceab261",
     gender: "male",
     skin_tone: "brown",
     body_type: "slim",
@@ -802,7 +744,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff4b1a2b5b8083f6ceab263",
     gender: "male",
     skin_tone: "brown",
     body_type: "slim",
@@ -815,7 +756,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff4b248b5b8083f6ceab265",
     gender: "male",
     skin_tone: "brown",
     body_type: "slim",
@@ -829,7 +769,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff4b2d5b5b8083f6ceab267",
     gender: "male",
     skin_tone: "brown",
     body_type: "slim",
@@ -842,7 +781,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff597cb0ac43621d81489af",
     gender: "male",
     skin_tone: "fair",
     body_type: "fat",
@@ -857,7 +795,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff598e10ac43621d81489b1",
     gender: "male",
     skin_tone: "fair",
     body_type: "fat",
@@ -872,7 +809,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff599bd0ac43621d81489b3",
     gender: "male",
     skin_tone: "fair",
     body_type: "fat",
@@ -886,7 +822,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff59a9b0ac43621d81489b7",
     gender: "male",
     skin_tone: "fair",
     body_type: "fat",
@@ -900,7 +835,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff59b330ac43621d81489b9",
     gender: "male",
     skin_tone: "fair",
     body_type: "fat",
@@ -915,7 +849,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff59bf50ac43621d81489bb",
     gender: "male",
     skin_tone: "fair",
     body_type: "fat",
@@ -929,7 +862,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff59c930ac43621d81489bd",
     gender: "male",
     skin_tone: "fair",
     body_type: "fat",
@@ -944,7 +876,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff59d220ac43621d81489bf",
     gender: "male",
     skin_tone: "fair",
     body_type: "fat",
@@ -958,7 +889,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff59d990ac43621d81489c1",
     gender: "male",
     skin_tone: "fair",
     body_type: "fat",
@@ -972,7 +902,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff59de30ac43621d81489c3",
     gender: "male",
     skin_tone: "fair",
     body_type: "fat",
@@ -985,7 +914,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff5a5b50ac43621d81489c5",
     gender: "male",
     skin_tone: "brown",
     body_type: "fat",
@@ -1000,7 +928,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff5a60f0ac43621d81489c7",
     gender: "male",
     skin_tone: "brown",
     body_type: "fat",
@@ -1015,7 +942,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff5a6580ac43621d81489c9",
     gender: "male",
     skin_tone: "brown",
     body_type: "fat",
@@ -1030,7 +956,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff5a6a80ac43621d81489cb",
     gender: "male",
     skin_tone: "brown",
     body_type: "fat",
@@ -1044,7 +969,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff5a7210ac43621d81489cd",
     gender: "male",
     skin_tone: "brown",
     body_type: "fat",
@@ -1059,7 +983,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff5a7960ac43621d81489cf",
     gender: "male",
     skin_tone: "brown",
     body_type: "fat",
@@ -1073,7 +996,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff5a7f90ac43621d81489d1",
     gender: "male",
     skin_tone: "brown",
     body_type: "fat",
@@ -1087,7 +1009,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff5a8680ac43621d81489d3",
     gender: "male",
     skin_tone: "brown",
     body_type: "fat",
@@ -1101,7 +1022,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff5a8f60ac43621d81489d5",
     gender: "male",
     skin_tone: "brown",
     body_type: "fat",
@@ -1116,7 +1036,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff5a9510ac43621d81489d7",
     gender: "male",
     skin_tone: "brown",
     body_type: "fat",
@@ -1130,7 +1049,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff5af620ac43621d81489d9",
     gender: "male",
     skin_tone: "brown",
     body_type: "fat",
@@ -1144,7 +1062,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff5afa40ac43621d81489db",
     gender: "male",
     skin_tone: "brown",
     body_type: "fat",
@@ -1158,7 +1075,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff5b01e0ac43621d81489dd",
     gender: "male",
     skin_tone: "brown",
     body_type: "fat",
@@ -1172,7 +1088,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff5b0710ac43621d81489df",
     gender: "male",
     skin_tone: "brown",
     body_type: "fat",
@@ -1186,7 +1101,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff5b0cf0ac43621d81489e1",
     gender: "male",
     skin_tone: "brown",
     body_type: "fat",
@@ -1200,7 +1114,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff5b1440ac43621d81489e3",
     gender: "male",
     skin_tone: "brown",
     body_type: "fat",
@@ -1214,7 +1127,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff5b1c30ac43621d81489e5",
     gender: "male",
     skin_tone: "brown",
     body_type: "fat",
@@ -1228,7 +1140,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff5b26c0ac43621d81489e7",
     gender: "male",
     skin_tone: "brown",
     body_type: "fat",
@@ -1242,7 +1153,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff5b30f0ac43621d81489e9",
     gender: "male",
     skin_tone: "brown",
     body_type: "fat",
@@ -1256,7 +1166,6 @@ const data = [
     __v: 0,
   },
   {
-    _id: "5ff5b3a50ac43621d81489eb",
     gender: "male",
     skin_tone: "brown",
     body_type: "fat",
@@ -1268,7 +1177,277 @@ const data = [
     src:
       "https://i.pinimg.com/564x/04/74/9b/04749b3a9aebbe169433689e91d1eb0b.jpg",
     __v: 0,
-  },
+  },{
+    gender: "female",
+    statement: "Off Shoulder Knotted Top & Tropical Print Slit Skirt Set",
+    ocassion: "you can try this look on beach,summer ocassions.",
+    suggestion: "you can try this look in different colors.",
+    src: "https://i.pinimg.com/564x/14/3d/42/143d42425b996db2969cbc01b183472d.jpg",
+    body_type: "slim",
+    skin_tone: "fair",
+    product_type: "summer"
+  },{
+    gender: "female",
+    statement: "linear textured pink -blue skirt with top",
+    ocassion: "you can try this look on beach,summer ocassions.",
+    suggestion: "you can try this look in different colors.",
+    src: "https://i.pinimg.com/564x/ee/af/84/eeaf84c17706e59a7492e2ba36e825c8.jpg",
+    body_type: "slim",
+    product_type: "summer",
+    skin_tone: "fair",
+  },{
+    gender: "female",
+    statement: "floral black maxi dress",
+    ocassion: "you can try this look on beach,summer ocassions.",
+    suggestion: "you can try this look in different colors.",
+    src: "https://i.pinimg.com/564x/1b/9f/e4/1b9fe4007d61e1aaa886dc046d789e45.jpg",
+    product_type: "summer",
+    body_type: "slim",
+    skin_tone: "fair"
+  },{
+    gender: "female",
+    statement: "white floral print midi",
+    ocassion: "you can try this look in college parties,summer ocassions.",
+    suggestion: "you can try this look in different colors.",
+    src: "https://i.pinimg.com/564x/80/eb/40/80eb403280c4a8a81fe0d0a05ca92da9.jpg",
+    product_type: "summer",
+    body_type: "slim",
+    skin_tone: "fair"
+  },{
+    gender: "female",
+    statement: "check off-shoulder top with white skirt",
+    ocassion: "perfect beach look.",
+    suggestion: "look is good enough in itself.",
+    src: "https://i.pinimg.com/564x/fa/8d/fe/fa8dfef655d034b095a46b1b8959a2ae.jpg",
+    product_type: "summer",
+    body_type: "slim",
+    skin_tone: "fair"
+  },{
+    gender: "female",
+    statement: "white off-shoulder top with slit printed skirt",
+    ocassion: "perfect beach look.",
+    suggestion: "look is good enough in itself.",
+    src: "https://i.pinimg.com/564x/6f/d8/c1/6fd8c158ecbd2fac397812748d2705fe.jpg",
+    product_type: "summer",
+    body_type: "slim",
+    skin_tone: "fair"
+  },{
+    gender: "female",
+    statement: "polka dotted maxi dress with front slit",
+    ocassion: "you can try thi look on beach and summer ocassions.",
+    suggestion: "you can try this look in different pistel colours and can also try with musturd color in it.",
+    src: "https://i.pinimg.com/564x/c1/03/50/c103500f961ae3ce58e16584b648ba56.jpg",
+    product_type: "summer",
+    body_type: "slim",
+    skin_tone: "fair"
+  },{
+    gender: "female",
+    statement: "black tee with ripped short",
+    ocassion: "you can try thi look on beach and summer ocassions.",
+    suggestion: "you can replace this t shirt with white color and shorts with ripped denim.",
+    src: "https://i.pinimg.com/564x/01/1c/b7/011cb76dbd64090b8d26b7a91428c3ef.jpg",
+    product_type: "summer",
+    body_type: "slim",
+    skin_tone: "fair"
+  },{
+    gender: "female",
+    statement: "white tee shirt with animal print skirt with front slit",
+    ocassion: "you can try thi look on beach and summer ocassions.",
+    suggestion: "you can replace this t shirt with black color and shorts with ripped denim.",
+    src: "https://i.pinimg.com/564x/0f/94/22/0f942203b565788cacec7f8c7033577d.jpg",
+    product_type: "summer",
+    body_type: "slim",
+    skin_tone: "fair"
+  },{
+    gender: "female",
+    statement: "multi patterened skirt top",
+    ocassion: "you can try thi look on beach and summer ocassions.",
+    suggestion: "perfect look.",
+    src: "https://i.pinimg.com/564x/72/08/4b/72084ba38aad4ca1b68ece87d6c12aa3.jpg",
+    product_type: "summer",
+    body_type: "slim",
+    skin_tone: "fair"
+  },{
+    gender: "female",
+    statement: "light pink skirt-white top-blazer",
+    ocassion: "you can try thi look in office parties and in office meetings.",
+    suggestion: "perfect look.",
+    src: "https://i.pinimg.com/564x/40/4b/35/404b3553cd63ec83165549957c382a45.jpg",
+    product_type: "office",
+    body_type: "slim",
+    skin_tone: "fair"
+  },{
+    gender: "female",
+    statement: "grey skirt white shirt",
+    ocassion: "you can try thi look in office parties and in office meetings.",
+    suggestion: "grey skirt can be replaced with black,blue.",
+    src: "https://i.pinimg.com/564x/97/e8/41/97e8412939b9ae62efb6ab6413646f50.jpg",
+    product_type: "office",
+    body_type: "slim",
+    skin_tone: "fair"
+  },{
+    gender: "female",
+    statement: "blue bodycon dress",
+    ocassion: "you can try thi look in office parties and in office meetings.",
+    suggestion: "dress color can be replaced with black,blue,brown grey.",
+    src: "https://i.pinimg.com/564x/30/bc/d8/30bcd88101714712fe7188b086849e72.jpg",
+    product_type: "office",
+    body_type: "slim",
+    skin_tone: "fair"
+  },{
+    gender: "female",
+    statement: "white shirt green cullote pants",
+    ocassion: "you can try thi look in office parties and in office meetings.",
+    suggestion: "pant color can be replaced with black,blue,brown grey.",
+    src: "https://i.pinimg.com/564x/fb/48/6c/fb486ce268612cd38db09c2d155a3ee9.jpg",
+    product_type: "office",
+    body_type: "slim",
+    skin_tone: "fair"
+  },{
+    gender: "female",
+    statement: "blue dress -beige heels",
+    ocassion: "you can try thi look in office parties and in office meetings.",
+    suggestion: "pant color can be replaced with black,blue,brown grey.",
+    src: "https://i.pinimg.com/564x/27/21/0e/27210e3dafad423cd04de93def60ae80.jpg",
+    product_type: "office",
+    body_type: "slim",
+    skin_tone: "fair"
+  },{
+    gender: "female",
+    statement: "black liner pattern blazer suit",
+    ocassion: "you can try thi look in office parties and in office meetings.",
+    suggestion: "pant color can be replaced with black,blue,brown grey.",
+    src: "https://i.pinimg.com/564x/14/9f/6e/149f6ea8a557cacc08c0a86e3238b50e.jpg",
+    product_type: "office",
+    body_type: "slim",
+    skin_tone: "fair"
+  },{
+    gender: "female",
+    statement: "checked blazer suit",
+    ocassion: "you can try thi look in office parties and in office meetings.",
+    suggestion: "suit color can be replaced with black,blue,brown grey.",
+    src: "https://i.pinimg.com/564x/a6/02/80/a60280ba7e66fc288ffd9b1f382426cc.jpg",
+    product_type: "office",
+    body_type: "slim",
+    skin_tone: "fair"
+  },{
+    gender: "female",
+    statement: "white shirt-brown shade pants",
+    ocassion: "you can try thi look in office parties and in office meetings.",
+    suggestion: "pant color can be replaced with black,blue,brown grey.",
+    src: "https://i.pinimg.com/564x/9b/a3/4e/9ba34e3fd77fb5041b3cf8785bd92cb6.jpg",
+    product_type: "office",
+    body_type: "slim",
+    skin_tone: "fair"
+  },{
+    gender: "female",
+    statement: "light pink shirt-black shade pants",
+    ocassion: "you can try thi look in office parties and in office meetings.",
+    suggestion: "pant color can be replaced with black,blue,brown grey.",
+    src: "https://i.pinimg.com/originals/67/ce/64/67ce64eb167f7eb699f39eaca6e9d0e6.jpg",
+    product_type: "office",
+    body_type: "slim",
+    skin_tone: "fair"
+  },{
+    gender: "female",
+    statement: "blue jacket- blue high neck-denim-brown shoes",
+    ocassion: "you can try thi look in winter parties and in heavy winter days.",
+    suggestion: "pant color can be replaced with black,blue,brown grey.",
+    src: "https://i.pinimg.com/564x/0f/d2/68/0fd2689d7664dd08f9ecd999369a0a86.jpg",
+    product_type: "winter",
+    body_type: "slim",
+    skin_tone: "fair"
+  },{
+    gender: "female",
+    statement: "black high neck- warm printed skirt",
+    ocassion: "you can try thi look in winter parties and in heavy winter days.",
+    suggestion: "high neck color can be replaced with black,blue,brown grey.",
+    src: "https://i.pinimg.com/564x/06/1f/c0/061fc05d08466b19206c46e2ee65deb8.jpg",
+    product_type: "winter",
+    body_type: "slim",
+    skin_tone: "fair"
+  },{
+    gender: "female",
+    statement: "high neck warm dress",
+    ocassion: "you can try thi look in winter parties and in heavy winter days.",
+    suggestion: "you can try this with high beige boots",
+    src: "https://i.pinimg.com/564x/2a/74/70/2a7470f20252779fd4863c9e43a3fbe1.jpg",
+    product_type: "winter",
+    body_type: "slim",
+    skin_tone: "fair"
+  },{
+    gender: "female",
+    statement: "high neck warm dress",
+    ocassion: "you can try thi look in winter parties and in heavy winter days.",
+    suggestion: "you can try this with high beige boots",
+    src: "https://i.pinimg.com/564x/d1/f4/3f/d1f43fbd3165d22528c27ee8514b10a8.jpg",
+    product_type: "winter",
+    body_type: "slim",
+    skin_tone: "fair"
+  },{
+    gender: "female",
+    statement: "grey coat black top with white shoes",
+    ocassion: "you can try thi look in winter parties and in heavy winter days.",
+    suggestion: "you can try this look with boots.",
+    src: "https://i.pinimg.com/564x/24/22/08/24220881e2b7046265c658fc7407ce73.jpg",
+    product_type: "winter",
+    body_type: "slim",
+    skin_tone: "fair"
+  },{
+    gender: "female",
+    statement: "brown high neck-yellow checked skirt",
+    ocassion: "you can try thi look in winter parties and in heavy winter days.",
+    suggestion: "you can try this look with boots.",
+    src: "https://i.pinimg.com/564x/07/37/e2/0737e2557e5317f45843b3f37c49785e.jpg",
+    product_type: "winter",
+    body_type: "slim",
+    skin_tone: "fair"
+  },{
+    gender: "female",
+    statement: "yellow pullover white trouser",
+    ocassion: "you can try thi look in winter parties and in heavy winter days.",
+    suggestion: "you can try this look with boots.",
+    src: "https://i.pinimg.com/564x/e8/64/f5/e864f53dba3749d3fa43db45d2d4e9a3.jpg",
+    product_type: "winter",
+    body_type: "slim",
+    skin_tone: "fair"
+  },{
+    gender: "female",
+    statement: "brown pullover-black trouser pant",
+    ocassion: "you can try thi look in winter parties and in heavy winter days.",
+    suggestion: "you can try this look with boots.",
+    src: "https://i.pinimg.com/564x/79/92/31/7992311fc97f92c15d7238b56be32f18.jpg",
+    product_type: "winter",
+    body_type: "slim",
+    skin_tone: "fair"
+  },{
+    gender: "female",
+    statement: "blue jacket-black trouser ",
+    ocassion: "you can try thi look in winter parties and in heavy winter days.",
+    suggestion: "you can try this look with boots.",
+    src: "https://i.pinimg.com/564x/98/a6/f5/98a6f53225ef6d07755b15da08ff10c2.jpg",
+    product_type: "winter",
+    body_type: "slim",
+    skin_tone: "fair"
+  },{
+    gender: "female",
+    statement: "white jacket-blue denim",
+    ocassion: "you can try thi look in winter parties and in heavy winter days",
+    suggestion: "you can try this look with boots.",
+    src: "https://i.pinimg.com/564x/98/a6/f5/98a6f53225ef6d07755b15da08ff10c2.jpg",
+    product_type: "winter",
+    body_type: "slim",
+    skin_tone: "fair"
+  },{
+    gender: "female",
+    statement: "white jacket-blue denim",
+    ocassion: "you can try thi look in winter parties and in heavy winter days",
+    suggestion: "you can try this look with boots.",
+    src: "https://i.pinimg.com/564x/98/a6/f5/98a6f53225ef6d07755b15da08ff10c2.jpg",
+    product_type: "winter",
+    body_type: "slim",
+    skin_tone: "fair"
+  }
 ];
 
 module.exports = data;
