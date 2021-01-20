@@ -17,4 +17,8 @@ app.use("/user", userRoutes);
 
 app.use("/fav", favRoutes);
 
+app.get("/",(req,res)=>{
+    res.send("hi");
+})
+
 module.exports = app;
